@@ -986,3 +986,74 @@ ingredient009 = Ingredients(
 
 session.add(ingredient009)
 session.commit()
+
+# ------------------------------------------------------- #
+#       Thai Pomelo Crab Salad Avocados Directions        #
+# ------------------------------------------------------- #
+
+direction001 = Directions(
+    recipe_id=pomelo_avocados.id,
+    step_id='1',
+    step='''Segment your your pomelo (or grapefruit and oranges), pull apart
+    gently into small pieces and set aside.'''
+    )
+
+session.add(direction001)
+session.commit()
+
+direction002 = Directions(
+    recipe_id=pomelo_avocados.id,
+    step_id='2',
+    step='''In a small frying pan saute your shallots and garlic in a little
+    bit of olive oil or coconut oil just until aromatic. Set Aside to cool.'''
+    )
+
+session.add(direction002)
+session.commit()
+
+direction003 = Directions(
+    recipe_id=pomelo_avocados.id,
+    step_id='3',
+    step='''In a medium bowl, add your chopped gluten-free imitation crab-meat
+    or fresh steamed crab meat, picked over for shells. Add the cooled shallots
+    and garlic, pomelo, olive oil (melted coconut oil), lemon juice, chili
+    peppers and salt and pepper to taste. Toss gently to incorporate
+    ingredients. Set aside.'''
+    )
+
+session.add(direction003)
+session.commit()
+
+direction004 = Directions(
+    recipe_id=pomelo_avocados.id,
+    step_id='4',
+    step='''Cut your avocados in half. Carefully remove the pit a small
+    teaspoon full of the the avocado meat to give more room for the Thai Pomelo
+    Crab Salad. That extra spoonful is a treat for the cook of course! Sprinkle
+    the juice of the lemon inside the avocado to prevent the oxidation process
+    from occurring. Season with salt and pepper as desired.'''
+    )
+
+session.add(direction004)
+session.commit()
+
+direction005 = Directions(
+    recipe_id=pomelo_avocados.id,
+    step_id='5',
+    step='''Place a few mounding tablespoons of Thai Pomelo Crab Salad in the
+    center of the avocado and mound up high. Enjoy!'''
+    )
+
+session.add(direction005)
+session.commit()
+
+direction006 = Directions(
+    recipe_id=pomelo_avocados.id,
+    step_id='6',
+    step='''***You can make your Thai Pomelo Crab Salad up to 24 hours in
+    advance. Cut your avocados in half and sprinkle with lemon juice just
+    before you are ready to serve.'''
+    )
+
+session.add(direction006)
+session.commit()
