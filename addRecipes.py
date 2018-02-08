@@ -1670,3 +1670,71 @@ tuna_cups = Recipe(
 
 session.add(tuna_cups)
 session.commit()
+
+# ------------------------------------------------------- #
+#            Mediterranean Tuna Cups Ingredients          #
+# ------------------------------------------------------- #
+
+ingredient001 = Ingredients(
+    recipe_id=tuna_cups.id,
+    ingr_id='1',
+    ingredient='3 English cucumbers'
+    )
+
+session.add(ingredient001)
+session.commit()
+
+ingredient002 = Ingredients(
+    recipe_id=tuna_cups.id,
+    ingr_id='2',
+    ingredient='2/3 cup plain nonfat Greek yogurt'
+    )
+
+session.add(ingredient002)
+session.commit()
+
+ingredient003 = Ingredients(
+    recipe_id=tuna_cups.id,
+    ingr_id='3',
+    ingredient='1/3 cup coarsely chopped pitted Kalamata olives'
+    )
+
+session.add(ingredient003)
+session.commit()
+
+ingredient004 = Ingredients(
+    recipe_id=tuna_cups.id,
+    ingr_id='4',
+    ingredient='1/3 cup finely chopped red onion'
+    )
+
+session.add(ingredient004)
+session.commit()
+
+ingredient005 = Ingredients(
+    recipe_id=tuna_cups.id,
+    ingr_id='5',
+    ingredient='2 tablespoons fresh lemon juice'
+    )
+
+session.add(ingredient005)
+session.commit()
+
+ingredient006 = Ingredients(
+    recipe_id=tuna_cups.id,
+    ingr_id='6',
+    ingredient='1/4 teaspoon garlic salt'
+    )
+
+session.add(ingredient006)
+session.commit()
+
+ingredient007 = Ingredients(
+    recipe_id=tuna_cups.id,
+    ingr_id='7',
+    ingredient='''2 cans (5 ounces each) solid white albacore tuna in water,
+    drained and flaked'''
+    )
+
+session.add(ingredient007)
+session.commit()
