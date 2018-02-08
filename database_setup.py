@@ -38,7 +38,8 @@ class Directions(Base):
     __tablename__ = 'directions'
 
     recipe_id = Column(Integer, ForeignKey('recipe.id'))
-    step_id = Column(Integer, primary_key=True)
+    step_id = Column(Integer)
+    step_index = Column(Integer, primary_key=True)
     step = Column(String)
 
 
