@@ -1493,3 +1493,48 @@ ingredient006 = Ingredients(
 
 session.add(ingredient006)
 session.commit()
+
+# ------------------------------------------------------- #
+#      Garlic-Herb Parmesan Dipping Sticks Directions     #
+# ------------------------------------------------------- #
+
+direction001 = Directions(
+    recipe_id=parmesan_sticks.id,
+    step_id='1',
+    step='''Preheat oven to 400°F. Spray baking sheet with nonstick
+    cooking spray.'''
+    )
+
+session.add(direction001)
+session.commit()
+
+direction002 = Directions(
+    recipe_id=parmesan_sticks.id,
+    step_id='2',
+    step='''Roll out dough on lightly floured surface to 12-inch square.
+    Place prepared baking sheet. Bake 10 minutes.'''
+    )
+
+session.add(direction002)
+session.commit()
+
+direction003 = Directions(
+    recipe_id=parmesan_sticks.id,
+    step_id='3',
+    step='''Spread garlic-and-herb spreadable cheese evenly over crust. Layer
+    evenly with Italian cheese blend, Parmesan cheese, and oregano. Bake 15
+    minutes or until golden brown.'''
+    )
+
+session.add(direction003)
+session.commit()
+
+direction004 = Directions(
+    recipe_id=parmesan_sticks.id,
+    step_id='4',
+    step='''Slice lengthwise into 8 rows; slice opposite direction into 3 rows.
+    Serve with marinara sauce or ranch for dipping, if desired.'''
+    )
+
+session.add(direction004)
+session.commit()
