@@ -1411,3 +1411,26 @@ direction005 = Directions(
 
 session.add(direction005)
 session.commit()
+
+# ----------------------------------------------------------------------------#
+#                            End Side Dish Recipes                            #
+# ----------------------------------------------------------------------------#
+
+# ----------------------------------------------------------------------------#
+#                            Add Appetizer Recipes                            #
+# ----------------------------------------------------------------------------#
+
+# ------------------------------------------------------- #
+#            Garlic-Herb Parmesan Dipping Sticks          #
+# ------------------------------------------------------- #
+
+parmesan_sticks = Recipe(
+    id='7',
+    name='Garlic-Herb Parmesan Dipping Sticks',
+    image="",
+    course_id=appetizer.id,
+    course=appetizer
+    )
+
+session.add(parmesan_sticks)
+session.commit()
