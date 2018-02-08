@@ -706,3 +706,63 @@ ingredient013 = Ingredients(
 
 session.add(ingredient013)
 session.commit()
+
+# ------------------------------------------------------- #
+#           Roasted Cherry Tomato Soup Directions         #
+# ------------------------------------------------------- #
+
+direction001 = Directions(
+    recipe_id=roasted_tomato.id,
+    step_id='1',
+    step='Preheat the oven to 400ºF.'
+    )
+
+session.add(direction001)
+session.commit()
+
+direction002 = Directions(
+    recipe_id=roasted_tomato.id,
+    step_id='2',
+    step='''Add the onion, tomatoes and garlic (leave the cloves whole!) to
+    a large rimmed baking sheet. Drizzle with the olive oil, then sprinkle
+    with the salt and pepper. Toss to coat and spread in an even layer. Bake
+    for about 30 minutes, stirring halfway through, until the tomatoes
+    have shriveled and started to char. Remove from the oven and let cool
+    for about 5 minutes.'''
+    )
+
+session.add(direction002)
+session.commit()
+
+direction003 = Directions(
+    recipe_id=roasted_tomato.id,
+    step_id='3',
+    step='''Add the roasted veggie mixture to a blender, along with the broth,
+    tomato paste, oregano, coconut milk and salt. Process until smooth.
+    Transfer the mixture to a medium saucepan.'''
+    )
+
+session.add(direction003)
+session.commit()
+
+direction004 = Directions(
+    recipe_id=roasted_tomato.id,
+    step_id='4',
+    step='''Set the pan over medium low / low heat and cook for about
+    10 minutes, stirring occasionally, until warmed through and the flavors
+    have had a chance to meld. Taste and season with additional salt / pepper
+    as needed.'''
+    )
+
+session.add(direction004)
+session.commit()
+
+direction005 = Directions(
+    recipe_id=roasted_tomato.id,
+    step_id='5',
+    step='''Serve topped with plenty of fresh basil and bread on the
+    side for dipping!'''
+    )
+
+session.add(direction005)
+session.commit()
