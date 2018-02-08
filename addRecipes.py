@@ -871,3 +871,26 @@ direction002 = Directions(
 
 session.add(direction002)
 session.commit()
+
+# ----------------------------------------------------------------------------#
+#                              End Soup Recipes                               #
+# ----------------------------------------------------------------------------#
+
+# ----------------------------------------------------------------------------#
+#                            Add Side Dish Recipes                            #
+# ----------------------------------------------------------------------------#
+
+# ------------------------------------------------------- #
+#             Thai Pomelo Crab Salad Avocados             #
+# ------------------------------------------------------- #
+
+pomelo_avocados = Recipe(
+    id='4',
+    name='Thai Pomelo Crab Salad Avocados',
+    image="",
+    course_id=side_dish.id,
+    course=side_dish
+    )
+
+session.add(pomelo_avocados)
+session.commit()
