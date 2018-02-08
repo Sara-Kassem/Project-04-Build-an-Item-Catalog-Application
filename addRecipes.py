@@ -894,3 +894,95 @@ pomelo_avocados = Recipe(
 
 session.add(pomelo_avocados)
 session.commit()
+
+# ------------------------------------------------------- #
+#       Thai Pomelo Crab Salad Avocados Ingredients       #
+# ------------------------------------------------------- #
+
+ingredient001 = Ingredients(
+    recipe_id=pomelo_avocados.id,
+    ingr_id='1',
+    ingredient='''pomelo - 1 large pomelo (1.5 cups) segmented and pulled apart
+    to small pieces (can exchange with 1 large grapefruit and 1 medium
+    orange)'''
+    )
+
+session.add(ingredient001)
+session.commit()
+
+ingredient002 = Ingredients(
+    recipe_id=pomelo_avocados.id,
+    ingr_id='2',
+    ingredient='shallots - 4-5 peeled and chopped finely'
+    )
+
+session.add(ingredient002)
+session.commit()
+
+ingredient003 = Ingredients(
+    recipe_id=pomelo_avocados.id,
+    ingr_id='3',
+    ingredient='garlic - 2 cloves peeled and chopped finely'
+    )
+
+session.add(ingredient003)
+session.commit()
+
+ingredient004 = Ingredients(
+    recipe_id=pomelo_avocados.id,
+    ingr_id='4',
+    ingredient='''crab meat - 450 grams (1 cup) gluten-free imitation crab or
+    steamed fresh crab picked over for shells)'''
+    )
+
+session.add(ingredient004)
+session.commit()
+
+ingredient005 = Ingredients(
+    recipe_id=pomelo_avocados.id,
+    ingr_id='5',
+    ingredient='''coconut oil - 2 tablespoons melted or olive oil if you prefer
+    (I love that tropical flavor with the coconut oil)'''
+    )
+
+session.add(ingredient005)
+session.commit()
+
+ingredient006 = Ingredients(
+    recipe_id=pomelo_avocados.id,
+    ingr_id='6',
+    ingredient='''lemon juice - juice of a lemon (extra lemon to prepare the
+    avocados) You can also use limes but I only had lemons on hand'''
+    )
+
+session.add(ingredient006)
+session.commit()
+
+ingredient007 = Ingredients(
+    recipe_id=pomelo_avocados.id,
+    ingr_id='7',
+    ingredient='''chili peppers - 1 finely chopped (to taste) I used a Thai
+    chili but you can use any kind you wish or none at all if you like it
+    mild'''
+    )
+
+session.add(ingredient007)
+session.commit()
+
+ingredient008 = Ingredients(
+    recipe_id=pomelo_avocados.id,
+    ingr_id='8',
+    ingredient='salt and pepper - to taste '
+    )
+
+session.add(ingredient008)
+session.commit()
+
+ingredient009 = Ingredients(
+    recipe_id=pomelo_avocados.id,
+    ingr_id='9',
+    ingredient='avocados - 2 - 3 whole'
+    )
+
+session.add(ingredient009)
+session.commit()
