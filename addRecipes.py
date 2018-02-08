@@ -1629,3 +1629,29 @@ ingredient008 = Ingredients(
 
 session.add(ingredient008)
 session.commit()
+
+# ------------------------------------------------------- #
+#               Party Pitas Recipe Directions             #
+# ------------------------------------------------------- #
+
+direction001 = Directions(
+    recipe_id=party_pitas.id,
+    step_id='1',
+    step='''Combine the cream, mayonnaise, dill and garlic salt. Cut each pita
+    in half horizontally; spread 2 tablespoons mixture onto each cut
+    surface.'''
+    )
+
+session.add(direction001)
+session.commit()
+
+direction002 = Directions(
+    recipe_id=party_pitas.id,
+    step_id='2',
+    step='''On four pita halves, layer spinach, ham and cheese. Top with
+    remaining pita halves. Cut each sandwich into four wedges; secure with
+    toothpicks. Yield: 16 pieces.'''
+    )
+
+session.add(direction002)
+session.commit()
