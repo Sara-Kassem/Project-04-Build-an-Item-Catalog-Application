@@ -1738,3 +1738,42 @@ ingredient007 = Ingredients(
 
 session.add(ingredient007)
 session.commit()
+
+# ------------------------------------------------------- #
+#            Mediterranean Tuna Cups Directions           #
+# ------------------------------------------------------- #
+
+direction001 = Directions(
+    recipe_id=tuna_cups.id,
+    step_id='1',
+    step='''Cut ends off of each cucumber; cut each cucumber into 10 slices.
+    Scoop out cucumber slices with a rounded 1/2 teaspoon, leaving thick
+    shell.'''
+    )
+
+session.add(direction001)
+session.commit()
+
+direction002 = Directions(
+    recipe_id=tuna_cups.id,
+    step_id='2',
+    step='''Stir yogurt, olives, onion, lemon juice, and garlic in large bowl
+    until smooth and well blended. Stir in tuna.'''
+    )
+
+session.add(direction002)
+session.commit()
+
+direction003 = Directions(
+    recipe_id=tuna_cups.id,
+    step_id='3',
+    step='''Spoon about 1 tablespoon tuna salad into each cucumber cup. Serve
+    immediately.'''
+    )
+
+session.add(direction003)
+session.commit()
+
+# ----------------------------------------------------------------------------#
+#                            End Appetizer Recipes                            #
+# ----------------------------------------------------------------------------#
