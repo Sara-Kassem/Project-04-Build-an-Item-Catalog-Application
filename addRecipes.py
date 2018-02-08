@@ -1553,3 +1553,79 @@ party_pitas = Recipe(
 
 session.add(party_pitas)
 session.commit()
+
+# ------------------------------------------------------- #
+#               Party Pitas Recipe Ingredients            #
+# ------------------------------------------------------- #
+
+ingredient001 = Ingredients(
+    recipe_id=party_pitas.id,
+    ingr_id='1',
+    ingredient='1 package (8 ounces) cream cheese, softened'
+    )
+
+session.add(ingredient001)
+session.commit()
+
+ingredient002 = Ingredients(
+    recipe_id=party_pitas.id,
+    ingr_id='2',
+    ingredient='1/2 cup mayonnaise'
+    )
+
+session.add(ingredient002)
+session.commit()
+
+ingredient003 = Ingredients(
+    recipe_id=party_pitas.id,
+    ingr_id='3',
+    ingredient='1/2 teaspoon dill weed'
+    )
+
+session.add(ingredient003)
+session.commit()
+
+ingredient004 = Ingredients(
+    recipe_id=party_pitas.id,
+    ingr_id='4',
+    ingredient='1/4 teaspoon garlic salt'
+    )
+
+session.add(ingredient004)
+session.commit()
+
+ingredient005 = Ingredients(
+    recipe_id=party_pitas.id,
+    ingr_id='5',
+    ingredient='4 whole pita breads'
+    )
+
+session.add(ingredient005)
+session.commit()
+
+ingredient006 = Ingredients(
+    recipe_id=party_pitas.id,
+    ingr_id='6',
+    ingredient='1-1/2 cups fresh baby spinach'
+    )
+
+session.add(ingredient006)
+session.commit()
+
+ingredient007 = Ingredients(
+    recipe_id=party_pitas.id,
+    ingr_id='7',
+    ingredient='1 pound shaved fully cooked ham'
+    )
+
+session.add(ingredient007)
+session.commit()
+
+ingredient008 = Ingredients(
+    recipe_id=party_pitas.id,
+    ingr_id='8',
+    ingredient='1/2 pound thinly sliced Monterey Jack cheese'
+    )
+
+session.add(ingredient008)
+session.commit()
