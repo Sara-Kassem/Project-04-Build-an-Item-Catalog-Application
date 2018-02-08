@@ -85,3 +85,22 @@ session.add(salad)
 session.commit()
 
 print ("All Courses were added successfully!")
+
+# ----------------------------------------------------------------------------#
+#                              Add Soup Recipes                               #
+# ----------------------------------------------------------------------------#
+
+# ------------------------------------------------------- #
+#         Crushed Lentil Soup with Lamb Meatballs         #
+# ------------------------------------------------------- #
+
+lentil_soup = Recipe(
+    id='1',
+    name='Crushed Lentil Soup with Lamb Meatballs',
+    image="",
+    course_id=soup.id,
+    course=soup
+    )
+
+session.add(lentil_soup)
+session.commit()
