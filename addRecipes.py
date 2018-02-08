@@ -1538,3 +1538,18 @@ direction004 = Directions(
 
 session.add(direction004)
 session.commit()
+
+# ------------------------------------------------------- #
+#                    Party Pitas Recipe                   #
+# ------------------------------------------------------- #
+
+party_pitas = Recipe(
+    id='8',
+    name='Party Pitas Recipe',
+    image="",
+    course_id=appetizer.id,
+    course=appetizer
+    )
+
+session.add(party_pitas)
+session.commit()
