@@ -766,3 +766,18 @@ direction005 = Directions(
 
 session.add(direction005)
 session.commit()
+
+# ------------------------------------------------------- #
+#         7 Ingredient Coconut Curry Seafood Soup         #
+# ------------------------------------------------------- #
+
+coconut_curry = Recipe(
+    id='3',
+    name='7 Ingredient Coconut Curry Seafood Soup',
+    image="",
+    course_id=soup.id,
+    course=soup
+    )
+
+session.add(coconut_curry)
+session.commit()
