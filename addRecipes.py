@@ -1072,3 +1072,97 @@ jalapeno_shrimp = Recipe(
 
 session.add(jalapeno_shrimp)
 session.commit()
+
+# ------------------------------------------------------- #
+#       Cilantro-Jalapeno Grilled Shrimp Ingredients      #
+# ------------------------------------------------------- #
+
+ingredient001 = Ingredients(
+    recipe_id=jalapeno_shrimp.id,
+    ingr_id='1',
+    ingredient='8 oz fresh or frozen large shrimp in shells (peel & devein)'
+    )
+
+session.add(ingredient001)
+session.commit()
+
+ingredient002 = Ingredients(
+    recipe_id=jalapeno_shrimp.id,
+    ingr_id='2',
+    ingredient='1 1/2 cup fresh cilantro (washed)'
+    )
+
+session.add(ingredient002)
+session.commit()
+
+ingredient003 = Ingredients(
+    recipe_id=jalapeno_shrimp.id,
+    ingr_id='3',
+    ingredient='1/4 cup squeezed lime juice'
+    )
+
+session.add(ingredient003)
+session.commit()
+
+ingredient004 = Ingredients(
+    recipe_id=jalapeno_shrimp.id,
+    ingr_id='4',
+    ingredient='2 fresh jalapeno peppers (seeded)'
+    )
+
+session.add(ingredient004)
+session.commit()
+
+ingredient005 = Ingredients(
+    recipe_id=jalapeno_shrimp.id,
+    ingr_id='5',
+    ingredient='2 tbsp olive oil'
+    )
+
+session.add(ingredient005)
+session.commit()
+
+ingredient006 = Ingredients(
+    recipe_id=jalapeno_shrimp.id,
+    ingr_id='6',
+    ingredient='1 medium mango (peeled and cut into small strips)'
+    )
+
+session.add(ingredient006)
+session.commit()
+
+ingredient007 = Ingredients(
+    recipe_id=jalapeno_shrimp.id,
+    ingr_id='7',
+    ingredient='1 cup jicama (peeled and cut into small strips)'
+    )
+
+session.add(ingredient007)
+session.commit()
+
+ingredient008 = Ingredients(
+    recipe_id=jalapeno_shrimp.id,
+    ingr_id='8',
+    ingredient='1/4 cup red onion (chopped)'
+    )
+
+session.add(ingredient008)
+session.commit()
+
+ingredient009 = Ingredients(
+    recipe_id=jalapeno_shrimp.id,
+    ingr_id='9',
+    ingredient='1/4 cup cucumber (sliced)'
+    )
+
+session.add(ingredient009)
+session.commit()
+
+ingredient010 = Ingredients(
+    recipe_id=jalapeno_shrimp.id,
+    ingr_id='10',
+    ingredient='salt to taste'
+    )
+
+session.add(ingredient010)
+session.commit()
