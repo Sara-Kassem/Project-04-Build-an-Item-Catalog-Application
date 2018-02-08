@@ -1434,3 +1434,62 @@ parmesan_sticks = Recipe(
 
 session.add(parmesan_sticks)
 session.commit()
+
+# ------------------------------------------------------- #
+#      Garlic-Herb Parmesan Dipping Sticks Ingredients    #
+# ------------------------------------------------------- #
+
+ingredient001 = Ingredients(
+    recipe_id=parmesan_sticks.id,
+    ingr_id='1',
+    ingredient='1 package (13.8 ounces) refrigerated pizza dough'
+    )
+
+session.add(ingredient001)
+session.commit()
+
+ingredient002 = Ingredients(
+    recipe_id=parmesan_sticks.id,
+    ingr_id='2',
+    ingredient='3/4 cup light garlic-and-herb spreadable cheese'
+    )
+
+session.add(ingredient002)
+session.commit()
+
+ingredient003 = Ingredients(
+    recipe_id=parmesan_sticks.id,
+    ingr_id='3',
+    ingredient='3/4 cup shredded Italian cheese blend'
+    )
+
+session.add(ingredient003)
+session.commit()
+
+ingredient004 = Ingredients(
+    recipe_id=parmesan_sticks.id,
+    ingr_id='4',
+    ingredient='1/4 cup grated Parmesan cheese'
+    )
+
+session.add(ingredient004)
+session.commit()
+
+ingredient005 = Ingredients(
+    recipe_id=parmesan_sticks.id,
+    ingr_id='5',
+    ingredient='1/2 teaspoon dried oregano'
+    )
+
+session.add(ingredient005)
+session.commit()
+
+ingredient006 = Ingredients(
+    recipe_id=parmesan_sticks.id,
+    ingr_id='6',
+    ingredient='''Warm marinara sauce and/or reduced-fat ranch salad dressing
+    (optional)'''
+    )
+
+session.add(ingredient006)
+session.commit()
