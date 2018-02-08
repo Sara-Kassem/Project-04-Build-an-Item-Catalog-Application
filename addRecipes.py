@@ -570,3 +570,18 @@ direction015 = Directions(
 
 session.add(direction015)
 session.commit()
+
+# ------------------------------------------------------- #
+#                Roasted Cherry Tomato Soup               #
+# ------------------------------------------------------- #
+
+roasted_tomato = Recipe(
+    id='2',
+    name='Roasted Cherry Tomato Soup',
+    image="",
+    course_id=soup.id,
+    course=soup
+    )
+
+session.add(roasted_tomato)
+session.commit()
