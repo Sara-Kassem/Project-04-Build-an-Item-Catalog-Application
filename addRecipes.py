@@ -781,3 +781,70 @@ coconut_curry = Recipe(
 
 session.add(coconut_curry)
 session.commit()
+
+# ------------------------------------------------------- #
+#          Roasted Cherry Tomato Soup Ingredients         #
+# ------------------------------------------------------- #
+
+ingredient001 = Ingredients(
+    recipe_id=coconut_curry.id,
+    ingr_id='1',
+    ingredient='1 6oz can of clams, drained'
+    )
+
+session.add(ingredient001)
+session.commit()
+
+ingredient002 = Ingredients(
+    recipe_id=coconut_curry.id,
+    ingr_id='2',
+    ingredient='1 6oz can of salad shrimp, drained'
+    )
+
+session.add(ingredient002)
+session.commit()
+
+ingredient003 = Ingredients(
+    recipe_id=coconut_curry.id,
+    ingr_id='3',
+    ingredient='32 oz low sodium vegetable broth'
+    )
+
+session.add(ingredient003)
+session.commit()
+
+ingredient004 = Ingredients(
+    recipe_id=coconut_curry.id,
+    ingr_id='4',
+    ingredient='1 package of frozen stir-fry veggies'
+    )
+
+session.add(ingredient004)
+session.commit()
+
+ingredient005 = Ingredients(
+    recipe_id=coconut_curry.id,
+    ingr_id='5',
+    ingredient='2 tbsp coconut milk powder'
+    )
+
+session.add(ingredient005)
+session.commit()
+
+ingredient006 = Ingredients(
+    recipe_id=coconut_curry.id,
+    ingr_id='6',
+    ingredient='1 tbsp thai red curry paste'
+    )
+
+session.add(ingredient006)
+session.commit()
+
+ingredient007 = Ingredients(
+    recipe_id=coconut_curry.id,
+    ingr_id='7',
+    ingredient='1 tsp dried ginger powder'
+    )
+
+session.add(ingredient007)
+session.commit()
