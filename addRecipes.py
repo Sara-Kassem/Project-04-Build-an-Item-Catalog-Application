@@ -1057,3 +1057,18 @@ direction006 = Directions(
 
 session.add(direction006)
 session.commit()
+
+# ------------------------------------------------------- #
+#             Cilantro-Jalapeno Grilled Shrimp            #
+# ------------------------------------------------------- #
+
+jalapeno_shrimp = Recipe(
+    id='5',
+    name='Cilantro-Jalapeno Grilled Shrimp',
+    image="",
+    course_id=side_dish.id,
+    course=side_dish
+    )
+
+session.add(jalapeno_shrimp)
+session.commit()
