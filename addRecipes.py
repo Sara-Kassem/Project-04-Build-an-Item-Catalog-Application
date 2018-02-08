@@ -1166,3 +1166,59 @@ ingredient010 = Ingredients(
 
 session.add(ingredient010)
 session.commit()
+
+# ------------------------------------------------------- #
+#       Cilantro-Jalapeno Grilled Shrimp Directions       #
+# ------------------------------------------------------- #
+
+direction001 = Directions(
+    recipe_id=jalapeno_shrimp.id,
+    step_id='1',
+    step='If using frozen shrimp, thaw shrimp by putting it in a cold water.'
+    )
+
+session.add(direction001)
+session.commit()
+
+direction002 = Directions(
+    recipe_id=jalapeno_shrimp.id,
+    step_id='2',
+    step='''Now lets make our marinade: In a blender blend cilantro, lime
+    juice, jalapeno peppers and olive oil. Reserve 2 tablespoons for mango
+    salad.'''
+    )
+
+session.add(direction002)
+session.commit()
+
+direction003 = Directions(
+    recipe_id=jalapeno_shrimp.id,
+    step_id='3',
+    step='''To make mango salad: In a medium size mixing bowl combine mango,
+    cucumber, jicama, red onion, 2 tablespoons of cilantro marinade and season
+    with salt to taste. Garnish with chopped cilantro. Mix and set aside. '''
+    )
+
+session.add(direction003)
+session.commit()
+
+direction004 = Directions(
+    recipe_id=jalapeno_shrimp.id,
+    step_id='4',
+    step='''Dry shrimps with a paper towel. Place shrimp in a bowl and add
+    cilantro marinade. Marinade for 20 minutes. Thread 3 shrimp into 10 inch
+    skewers. Grill on a charcoal or gas grill over medium heat, for about 4
+    minutes on each side, or until shrimp is cooked. '''
+    )
+
+session.add(direction004)
+session.commit()
+
+direction005 = Directions(
+    recipe_id=jalapeno_shrimp.id,
+    step_id='5',
+    step='Serve with mango salad. Enjoy'
+    )
+
+session.add(direction005)
+session.commit()
