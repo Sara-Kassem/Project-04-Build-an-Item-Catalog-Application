@@ -783,7 +783,7 @@ session.add(coconut_curry)
 session.commit()
 
 # ------------------------------------------------------- #
-#          Roasted Cherry Tomato Soup Ingredients         #
+#    7 Ingredient Coconut Curry Seafood Soup Ingredients  #
 # ------------------------------------------------------- #
 
 ingredient001 = Ingredients(
@@ -847,4 +847,27 @@ ingredient007 = Ingredients(
     )
 
 session.add(ingredient007)
+session.commit()
+
+# ------------------------------------------------------- #
+#    7 Ingredient Coconut Curry Seafood Soup Directions   #
+# ------------------------------------------------------- #
+
+direction001 = Directions(
+    recipe_id=coconut_curry.id,
+    step_id='1',
+    step='Simmer all ingredients in a soup pot for 25 minutes.'
+    )
+
+session.add(direction001)
+session.commit()
+
+direction002 = Directions(
+    recipe_id=coconut_curry.id,
+    step_id='2',
+    step='''Serve with minced cilantro, crushed roasted peanuts,
+    and shredded coconut.'''
+    )
+
+session.add(direction002)
 session.commit()
