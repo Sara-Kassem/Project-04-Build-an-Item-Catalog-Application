@@ -585,3 +585,124 @@ roasted_tomato = Recipe(
 
 session.add(roasted_tomato)
 session.commit()
+
+# ------------------------------------------------------- #
+#          Roasted Cherry Tomato Soup Ingredients         #
+# ------------------------------------------------------- #
+
+ingredient001 = Ingredients(
+    recipe_id=roasted_tomato.id,
+    ingr_id='1',
+    ingredient='1 medium onion, sliced'
+    )
+
+session.add(ingredient001)
+session.commit()
+
+ingredient002 = Ingredients(
+    recipe_id=roasted_tomato.id,
+    ingr_id='2',
+    ingredient='2 pints cherry tomatoes'
+    )
+
+session.add(ingredient002)
+session.commit()
+
+ingredient003 = Ingredients(
+    recipe_id=roasted_tomato.id,
+    ingr_id='3',
+    ingredient='2 cloves garlic'
+    )
+
+session.add(ingredient003)
+session.commit()
+
+ingredient004 = Ingredients(
+    recipe_id=roasted_tomato.id,
+    ingr_id='4',
+    ingredient='2 tablespoons olive oil'
+    )
+
+session.add(ingredient004)
+session.commit()
+
+ingredient005 = Ingredients(
+    recipe_id=roasted_tomato.id,
+    ingr_id='5',
+    ingredient='1/4 teaspoon fine sea salt'
+    )
+
+session.add(ingredient005)
+session.commit()
+
+ingredient006 = Ingredients(
+    recipe_id=roasted_tomato.id,
+    ingr_id='6',
+    ingredient='1/4 teaspoon pepper'
+    )
+
+session.add(ingredient006)
+session.commit()
+
+ingredient007 = Ingredients(
+    recipe_id=roasted_tomato.id,
+    ingr_id='7',
+    ingredient='1 cup low sodium vegetable broth'
+    )
+
+session.add(ingredient007)
+session.commit()
+
+ingredient008 = Ingredients(
+    recipe_id=roasted_tomato.id,
+    ingr_id='8',
+    ingredient='1 tablespoon tomato paste'
+    )
+
+session.add(ingredient008)
+session.commit()
+
+ingredient009 = Ingredients(
+    recipe_id=roasted_tomato.id,
+    ingr_id='9',
+    ingredient='1/2 teaspoon dried oregano'
+    )
+
+session.add(ingredient009)
+session.commit()
+
+ingredient010 = Ingredients(
+    recipe_id=roasted_tomato.id,
+    ingr_id='10',
+    ingredient='1/2 cup canned full-fat coconut milk'
+    )
+
+session.add(ingredient010)
+session.commit()
+
+ingredient011 = Ingredients(
+    recipe_id=roasted_tomato.id,
+    ingr_id='11',
+    ingredient='1/4 teaspoon fine sea salt'
+    )
+
+session.add(ingredient011)
+session.commit()
+
+ingredient012 = Ingredients(
+    recipe_id=roasted_tomato.id,
+    ingr_id='12',
+    ingredient='plenty of chopped fresh basil, for serving'
+    )
+
+session.add(ingredient012)
+session.commit()
+
+ingredient013 = Ingredients(
+    recipe_id=roasted_tomato.id,
+    ingr_id='13',
+    ingredient='your favorite bread (or croutons!), for serving'
+    )
+
+session.add(ingredient013)
+session.commit()
