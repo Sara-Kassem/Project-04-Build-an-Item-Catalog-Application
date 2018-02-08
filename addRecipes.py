@@ -1655,3 +1655,18 @@ direction002 = Directions(
 
 session.add(direction002)
 session.commit()
+
+# ------------------------------------------------------- #
+#                 Mediterranean Tuna Cups                 #
+# ------------------------------------------------------- #
+
+tuna_cups = Recipe(
+    id='9',
+    name='Mediterranean Tuna Cups',
+    image="",
+    course_id=appetizer.id,
+    course=appetizer
+    )
+
+session.add(tuna_cups)
+session.commit()
