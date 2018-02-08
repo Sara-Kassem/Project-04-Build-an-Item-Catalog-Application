@@ -1795,3 +1795,5 @@ print ("Added Mediterranean Tuna Cups!")
 # ----------------------------------------------------------------------------#
 #                            End Appetizer Recipes                            #
 # ----------------------------------------------------------------------------#
+
+print ("All Recipes Were Added Successfully!")
