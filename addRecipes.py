@@ -571,6 +571,8 @@ direction015 = Directions(
 session.add(direction015)
 session.commit()
 
+print ("Added Crushed Lentil Soup with Lamb Meatballs!")
+
 # ------------------------------------------------------- #
 #                Roasted Cherry Tomato Soup               #
 # ------------------------------------------------------- #
@@ -767,6 +769,8 @@ direction005 = Directions(
 session.add(direction005)
 session.commit()
 
+print ("Added Roasted Cherry Tomato Soup!")
+
 # ------------------------------------------------------- #
 #         7 Ingredient Coconut Curry Seafood Soup         #
 # ------------------------------------------------------- #
@@ -871,6 +875,8 @@ direction002 = Directions(
 
 session.add(direction002)
 session.commit()
+
+print ("Added 7 Ingredient Coconut Curry Seafood Soup!")
 
 # ----------------------------------------------------------------------------#
 #                              End Soup Recipes                               #
@@ -1058,6 +1064,8 @@ direction006 = Directions(
 session.add(direction006)
 session.commit()
 
+print ("Added Thai Pomelo Crab Salad Avocados!")
+
 # ------------------------------------------------------- #
 #             Cilantro-Jalapeno Grilled Shrimp            #
 # ------------------------------------------------------- #
@@ -1222,6 +1230,8 @@ direction005 = Directions(
 
 session.add(direction005)
 session.commit()
+
+print ("Added Cilantro-Jalapeno Grilled Shrimp!")
 
 # ------------------------------------------------------- #
 #              Sesame Miso Chicken Meatballs              #
@@ -1412,6 +1422,8 @@ direction005 = Directions(
 session.add(direction005)
 session.commit()
 
+print ("Added Sesame Miso Chicken Meatballs!")
+
 # ----------------------------------------------------------------------------#
 #                            End Side Dish Recipes                            #
 # ----------------------------------------------------------------------------#
@@ -1539,6 +1551,8 @@ direction004 = Directions(
 session.add(direction004)
 session.commit()
 
+print ("Added Garlic-Herb Parmesan Dipping Sticks!")
+
 # ------------------------------------------------------- #
 #                    Party Pitas Recipe                   #
 # ------------------------------------------------------- #
@@ -1655,6 +1669,8 @@ direction002 = Directions(
 
 session.add(direction002)
 session.commit()
+
+print ("Added Party Pitas Recipe!")
 
 # ------------------------------------------------------- #
 #                 Mediterranean Tuna Cups                 #
@@ -1773,6 +1789,8 @@ direction003 = Directions(
 
 session.add(direction003)
 session.commit()
+
+print ("Added Mediterranean Tuna Cups!")
 
 # ----------------------------------------------------------------------------#
 #                            End Appetizer Recipes                            #
