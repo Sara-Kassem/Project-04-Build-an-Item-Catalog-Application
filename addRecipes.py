@@ -1222,3 +1222,18 @@ direction005 = Directions(
 
 session.add(direction005)
 session.commit()
+
+# ------------------------------------------------------- #
+#              Sesame Miso Chicken Meatballs              #
+# ------------------------------------------------------- #
+
+sesame_chicken= Recipe(
+    id='6',
+    name='Sesame Miso Chicken Meatballs',
+    image="",
+    course_id=side_dish.id,
+    course=side_dish
+    )
+
+session.add(sesame_chicken)
+session.commit()
