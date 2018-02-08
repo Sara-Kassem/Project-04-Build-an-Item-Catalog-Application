@@ -1349,3 +1349,65 @@ ingredient012 = Ingredients(
 
 session.add(ingredient012)
 session.commit()
+
+# ------------------------------------------------------- #
+#         Sesame Miso Chicken Meatballs Directions        #
+# ------------------------------------------------------- #
+
+direction001 = Directions(
+    recipe_id=sesame_chicken.id,
+    step_id='1',
+    step='''In a bowl mix ground chicken, tofu, green onions, miso paste,
+    ginger, tamari (soy sauce), white pepper, sesame oil and mix until well
+    incorporated.'''
+    )
+
+session.add(direction001)
+session.commit()
+
+direction002 = Directions(
+    recipe_id=sesame_chicken.id,
+    step_id='2',
+    step='''Roll chicken mixture into 1 and 1/2 inch balls and then roll into
+    toasted sesame seeds to cover chicken meatball completely. Set aside on a
+    parchment paper lined baking dish or well greased pan. (They have
+    a tendency to stick so don't skip this step)'''
+    )
+
+session.add(direction002)
+session.commit()
+
+direction003 = Directions(
+    recipe_id=sesame_chicken.id,
+    step_id='3',
+    step='''You can either bake uncovered for approximately 20 minutes in a 190
+    degree C (375 degrees F) oven until golden brown and no longer pink inside.
+    Or you can pan fry for approximately 12 minutes on medium low heat and
+    turning occasionally so they brown on all sides. When the chicken meatballs
+    are done, they will be slightly firm to the touch and no longer pink
+    inside.'''
+    )
+
+session.add(direction003)
+session.commit()
+
+direction004 = Directions(
+    recipe_id=sesame_chicken.id,
+    step_id='4',
+    step='''While your chicken meatballs are cooking, prepare the ponzu dipping
+    sauce. In a small bowl add tamari (soy sauce), lime juice and sesame oil
+    and mix.'''
+    )
+
+session.add(direction004)
+session.commit()
+
+direction005 = Directions(
+    recipe_id=sesame_chicken.id,
+    step_id='5',
+    step='''Enjoy Sesame Miso Chicken Meatballs with the ponzu sesame sauce!
+    Garnish with green onions if desired.'''
+    )
+
+session.add(direction005)
+session.commit()
