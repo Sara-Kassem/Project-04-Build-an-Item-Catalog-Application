@@ -1227,7 +1227,7 @@ session.commit()
 #              Sesame Miso Chicken Meatballs              #
 # ------------------------------------------------------- #
 
-sesame_chicken= Recipe(
+sesame_chicken = Recipe(
     id='6',
     name='Sesame Miso Chicken Meatballs',
     image="",
@@ -1236,4 +1236,116 @@ sesame_chicken= Recipe(
     )
 
 session.add(sesame_chicken)
+session.commit()
+
+# ------------------------------------------------------- #
+#         Sesame Miso Chicken Meatballs Ingredients       #
+# ------------------------------------------------------- #
+
+ingredient001 = Ingredients(
+    recipe_id=sesame_chicken.id,
+    ingr_id='1',
+    ingredient='Ground chicken - 1/2 pound (8 ounces)'
+    )
+
+session.add(ingredient001)
+session.commit()
+
+ingredient002 = Ingredients(
+    recipe_id=sesame_chicken.id,
+    ingr_id='2',
+    ingredient='Tofu - 1/3 cup firm'
+    )
+
+session.add(ingredient002)
+session.commit()
+
+ingredient003 = Ingredients(
+    recipe_id=sesame_chicken.id,
+    ingr_id='3',
+    ingredient='Green onions - 1/4 cup chopped finely '
+    )
+
+session.add(ingredient003)
+session.commit()
+
+ingredient004 = Ingredients(
+    recipe_id=sesame_chicken.id,
+    ingr_id='4',
+    ingredient='Miso paste - 1 tablespoon (gluten-free)'
+    )
+
+session.add(ingredient004)
+session.commit()
+
+ingredient005 = Ingredients(
+    recipe_id=sesame_chicken.id,
+    ingr_id='5',
+    ingredient='Ginger - 1 tablespoon'
+    )
+
+session.add(ingredient005)
+session.commit()
+
+ingredient006 = Ingredients(
+    recipe_id=sesame_chicken.id,
+    ingr_id='6',
+    ingredient='Tamari (soy sauce) - 1 tablespoon'
+    )
+
+session.add(ingredient006)
+session.commit()
+
+ingredient007 = Ingredients(
+    recipe_id=sesame_chicken.id,
+    ingr_id='7',
+    ingredient='White pepper - 1/2 teaspoon'
+    )
+
+session.add(ingredient007)
+session.commit()
+
+ingredient008 = Ingredients(
+    recipe_id=sesame_chicken.id,
+    ingr_id='8',
+    ingredient='Sesame oil - 1 teaspoon'
+    )
+
+session.add(ingredient008)
+session.commit()
+
+ingredient009 = Ingredients(
+    recipe_id=sesame_chicken.id,
+    ingr_id='9',
+    ingredient='Sesame seeds - 3 tablespoons toasted white '
+    )
+
+session.add(ingredient009)
+session.commit()
+
+ingredient010 = Ingredients(
+    recipe_id=sesame_chicken.id,
+    ingr_id='10',
+    ingredient='Ponzu Dipping Sauce'
+    )
+
+session.add(ingredient010)
+session.commit()
+
+ingredient011 = Ingredients(
+    recipe_id=sesame_chicken.id,
+    ingr_id='11',
+    ingredient='Tamari (soy sauce) - 3 tablespoons'
+    )
+
+session.add(ingredient011)
+session.commit()
+
+ingredient012 = Ingredients(
+    recipe_id=sesame_chicken.id,
+    ingr_id='12',
+    ingredient='Lime juice - 2 tablespoons'
+    )
+
+session.add(ingredient012)
 session.commit()
