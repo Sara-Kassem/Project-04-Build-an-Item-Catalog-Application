@@ -19,7 +19,7 @@
                 <nav>
                     <ul>
                     {%for i in courses%}
-                        <li><a href="#">{{i.name}}</a></li>
+                        <li><a href="{{url_for('courseRecipes', course_id=i.id)}}">{{i.name}}</a></li>
                     {% endfor %}
                     </ul>
                 </nav>
