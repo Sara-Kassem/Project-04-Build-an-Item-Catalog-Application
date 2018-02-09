@@ -9,7 +9,25 @@
 	</head>
 	
 	<body>
-        
+
+        <div class="container">
+
+            <header>
+
+                <img alt="Healty Recipes Logo">
+
+                <nav>
+                    <ul>
+                    {%for i in courses%}
+                        <li><a href="#">{{i.name}}</a></li>
+                    {% endfor %}
+                    </ul>
+                </nav>
+
+            </header>
+
+        </div> 
+
 	</body>
 
 </html>
