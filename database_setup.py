@@ -11,14 +11,14 @@ Base = declarative_base()
 class Course(Base):
     __tablename__ = 'course'
 
-    id = Column(Integer, primary_key=True, unique=True)
+    id = Column(Integer, primary_key=True)
     name = Column(String)
 
 
 class Recipe(Base):
     __tablename__ = 'recipe'
 
-    id = Column(Integer, primary_key=True, unique=True)
+    id = Column(Integer, primary_key=True)
     name = Column(String)
     image = Column(String)
     course_id = Column(Integer, ForeignKey('course.id'))
