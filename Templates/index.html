@@ -26,6 +26,21 @@
 
             </header>
 
+            <main>
+
+                <h1>Latest Added Recipes</h1>
+
+                {% for i in latestRecipes %}
+                
+                <section>
+                    <a href="#"><img src="{{i.image}}"></a>
+                    <p>{{i.name}}</p>
+                </section>
+                
+                {% endfor %}
+
+            </main>
+
         </div> 
 
 	</body>
