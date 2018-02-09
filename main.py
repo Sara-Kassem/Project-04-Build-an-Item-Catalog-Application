@@ -44,16 +44,18 @@ def courseRecipes(course_id):
     recipes=recipes,
     course=course)
 
-@app.route('/recipes/<int:recipe_id>')
-def recipe(recipe_id):
+@app.route('/course/<int:course_id>/recipes/<int:recipe_id>')
+def recipe(course_id, recipe_id):
     courses = session.query(Course).order_by(Course.id).all()
     recipe = session.query(Recipe).filter_by(id=recipe_id).one()
+    course = session.query(Course).filter_by(id=course_id).one()
     ingredients = session.query(Ingredients).filter_by(recipe_id=recipe_id).all()
     directions = session.query(Directions).filter_by(recipe_id=recipe_id).all()
 
     return render_template('recipe.html',
     courses=courses,
     recipe=recipe,
+    course=course,
     ingredients=ingredients,
     directions=directions
     )
