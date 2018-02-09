@@ -22,7 +22,8 @@ class Recipe(Base):
     name = Column(String)
     image = Column(String)
     course_id = Column(Integer, ForeignKey('course.id'))
-    course = relationship('Course')
+    course = relationship('Course',
+    primaryjoin='and_(Recipe.course_id==Course.id)')
 
 
 class Ingredients(Base):
