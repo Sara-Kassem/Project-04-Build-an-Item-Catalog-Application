@@ -28,7 +28,20 @@ def homePage():
     courses = session.query(Course).order_by(Course.id).all()
     latestRecipes = session.query(Recipe).order_by(Recipe.id.desc()).all()
 
-    return render_template('index.html', courses=courses, latestRecipes=latestRecipes)
+    return render_template('index.html',
+    courses=courses,
+    latestRecipes=latestRecipes)
+
+@app.route('/course/<int:course_id>/')
+@app.route('/course/<int:course_id>/recipes')
+def courseRecipes(course_id):
+    courses = session.query(Course).order_by(Course.id).all()
+    recipes = session.query(Recipe).order_by(Recipe.name).filter_by(course_id=course_id).all()
+
+    return render_template('courseRecipes.html',
+    courses=courses,
+    recipes=recipes)
+
 
 if __name__ == '__main__':
     app.debug = True
