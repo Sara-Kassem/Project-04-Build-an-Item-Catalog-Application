@@ -29,7 +29,7 @@
                 <h1>{{recipe.name}}</h1>
                 <img src="{{recipe.image}}">
                 <section>
-                    <h3>Ingredients:</h3>
+                    <h2>Ingredients:</h2>
                     <ul>
                         {% for i in ingredients %}
                         <li>{{i.ingredient}}</li>
@@ -38,7 +38,7 @@
                 </section>
 
                 <section>
-                    <h3>Directions:</h3>
+                    <h2>Directions:</h2>
                     <ul>
                         {% for i in directions %}
                         <li>{{i.step}}</li>
