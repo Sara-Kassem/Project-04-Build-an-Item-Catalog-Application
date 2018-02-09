@@ -42,6 +42,19 @@ def courseRecipes(course_id):
     courses=courses,
     recipes=recipes)
 
+@app.route('/recipes/<int:recipe_id>')
+def recipe(recipe_id):
+    courses = session.query(Course).order_by(Course.id).all()
+    recipe = session.query(Recipe).filter_by(id=recipe_id).one()
+    ingredients = session.query(Ingredients).filter_by(recipe_id=recipe_id).all()
+    directions = session.query(Directions).filter_by(recipe_id=recipe_id).all()
+
+    return render_template('recipe.html',
+    courses=courses,
+    recipe=recipe,
+    ingredients=ingredients,
+    directions=directions
+    )
 
 if __name__ == '__main__':
     app.debug = True
