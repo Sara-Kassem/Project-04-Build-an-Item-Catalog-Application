@@ -111,7 +111,7 @@ session.commit()
 
 ingredient001 = Ingredients(
     recipe_id=lentil_soup.id,
-    ingr_id='1',
+    ingr_number='1',
     ingredient='crushed Lentil Soup'
     )
 
@@ -120,7 +120,7 @@ session.commit()
 
 ingredient002 = Ingredients(
     recipe_id=lentil_soup.id,
-    ingr_id='2',
+    ingr_number='2',
     ingredient='2T. extra virgin Olive oil'
     )
 
@@ -129,7 +129,7 @@ session.commit()
 
 ingredient003 = Ingredients(
     recipe_id=lentil_soup.id,
-    ingr_id='3',
+    ingr_number='3',
     ingredient='1 lg. yellow onion, diced (about 2 cups)'
     )
 
@@ -138,7 +138,7 @@ session.commit()
 
 ingredient004 = Ingredients(
     recipe_id=lentil_soup.id,
-    ingr_id='4',
+    ingr_number='4',
     ingredient='1 lg. carrot, diced (about 1/2 cup)'
     )
 
@@ -147,7 +147,7 @@ session.commit()
 
 ingredient005 = Ingredients(
     recipe_id=lentil_soup.id,
-    ingr_id='5',
+    ingr_number='5',
     ingredient='1 celery stalk, diced (about 1/2 cup)'
     )
 
@@ -156,7 +156,7 @@ session.commit()
 
 ingredient006 = Ingredients(
     recipe_id=lentil_soup.id,
-    ingr_id='6',
+    ingr_number='6',
     ingredient='5 garlic cloves, minced'
     )
 
@@ -165,7 +165,7 @@ session.commit()
 
 ingredient007 = Ingredients(
     recipe_id=lentil_soup.id,
-    ingr_id='7',
+    ingr_number='7',
     ingredient='3 fresh bay leaves'
     )
 
@@ -174,7 +174,7 @@ session.commit()
 
 ingredient008 = Ingredients(
     recipe_id=lentil_soup.id,
-    ingr_id='8',
+    ingr_number='8',
     ingredient='1/2 c. red split lentils'
     )
 
@@ -183,7 +183,7 @@ session.commit()
 
 ingredient009 = Ingredients(
     recipe_id=lentil_soup.id,
-    ingr_id='9',
+    ingr_number='9',
     ingredient='1/2 c. brown rice'
     )
 
@@ -192,7 +192,7 @@ session.commit()
 
 ingredient010 = Ingredients(
     recipe_id=lentil_soup.id,
-    ingr_id='10',
+    ingr_number='10',
     ingredient='2 1/2 tsp. curry powder'
     )
 
@@ -201,7 +201,7 @@ session.commit()
 
 ingredient011 = Ingredients(
     recipe_id=lentil_soup.id,
-    ingr_id='11',
+    ingr_number='11',
     ingredient='1 1/2 tsp. sea salt'
     )
 
@@ -210,7 +210,7 @@ session.commit()
 
 ingredient012 = Ingredients(
     recipe_id=lentil_soup.id,
-    ingr_id='12',
+    ingr_number='12',
     ingredient='1/4 tsp. crushed red pepper'
     )
 
@@ -219,7 +219,7 @@ session.commit()
 
 ingredient013 = Ingredients(
     recipe_id=lentil_soup.id,
-    ingr_id='13',
+    ingr_number='13',
     ingredient='1/2 tsp. black pepper'
     )
 
@@ -228,7 +228,7 @@ session.commit()
 
 ingredient014 = Ingredients(
     recipe_id=lentil_soup.id,
-    ingr_id='14',
+    ingr_number='14',
     ingredient='7 c. vegetable broth, divided'
     )
 
@@ -237,7 +237,7 @@ session.commit()
 
 ingredient015 = Ingredients(
     recipe_id=lentil_soup.id,
-    ingr_id='15',
+    ingr_number='15',
     ingredient='Lamb Meatballs'
     )
 
@@ -246,7 +246,7 @@ session.commit()
 
 ingredient016 = Ingredients(
     recipe_id=lentil_soup.id,
-    ingr_id='16',
+    ingr_number='16',
     ingredient='3 T. olive oil'
     )
 
@@ -255,7 +255,7 @@ session.commit()
 
 ingredient017 = Ingredients(
     recipe_id=lentil_soup.id,
-    ingr_id='17',
+    ingr_number='17',
     ingredient='2 slices Udis Whole Grain Gluten Free Bread, crumbled'
     )
 
@@ -264,7 +264,7 @@ session.commit()
 
 ingredient018 = Ingredients(
     recipe_id=lentil_soup.id,
-    ingr_id='18',
+    ingr_number='18',
     ingredient='1/4 c. organic whole milk'
     )
 
@@ -273,7 +273,7 @@ session.commit()
 
 ingredient019 = Ingredients(
     recipe_id=lentil_soup.id,
-    ingr_id='19',
+    ingr_number='19',
     ingredient='1 lb. grassfed ground lamb'
     )
 
@@ -282,7 +282,7 @@ session.commit()
 
 ingredient020 = Ingredients(
     recipe_id=lentil_soup.id,
-    ingr_id='20',
+    ingr_number='20',
     ingredient='1 c. slivered and toasted almonds, chopped'
     )
 
@@ -291,7 +291,7 @@ session.commit()
 
 ingredient021 = Ingredients(
     recipe_id=lentil_soup.id,
-    ingr_id='21',
+    ingr_number='21',
     ingredient='1 smallish yellow onion (about &frac13; cup)'
     )
 
@@ -300,7 +300,7 @@ session.commit()
 
 ingredient022 = Ingredients(
     recipe_id=lentil_soup.id,
-    ingr_id='22',
+    ingr_number='22',
     ingredient='1/3 c. golden raisins, chopped'
     )
 
@@ -309,7 +309,7 @@ session.commit()
 
 ingredient023 = Ingredients(
     recipe_id=lentil_soup.id,
-    ingr_id='23',
+    ingr_number='23',
     ingredient='1 beaten egg'
     )
 
@@ -318,7 +318,7 @@ session.commit()
 
 ingredient024 = Ingredients(
     recipe_id=lentil_soup.id,
-    ingr_id='24',
+    ingr_number='24',
     ingredient='3 garlic cloves, minced'
     )
 
@@ -327,7 +327,7 @@ session.commit()
 
 ingredient025 = Ingredients(
     recipe_id=lentil_soup.id,
-    ingr_id='25',
+    ingr_number='25',
     ingredient='2 T. fresh chopped parsley'
     )
 
@@ -336,7 +336,7 @@ session.commit()
 
 ingredient026 = Ingredients(
     recipe_id=lentil_soup.id,
-    ingr_id='26',
+    ingr_number='26',
     ingredient='1 T. fresh chopped cilantro'
     )
 
@@ -345,7 +345,7 @@ session.commit()
 
 ingredient027 = Ingredients(
     recipe_id=lentil_soup.id,
-    ingr_id='27',
+    ingr_number='27',
     ingredient='1 tsp. kosher salt'
     )
 
@@ -354,7 +354,7 @@ session.commit()
 
 ingredient028 = Ingredients(
     recipe_id=lentil_soup.id,
-    ingr_id='28',
+    ingr_number='28',
     ingredient='Yogurt Sauce'
     )
 
@@ -363,7 +363,7 @@ session.commit()
 
 ingredient029 = Ingredients(
     recipe_id=lentil_soup.id,
-    ingr_id='29',
+    ingr_number='29',
     ingredient='1 c. organic plain yogurt'
     )
 
@@ -372,7 +372,7 @@ session.commit()
 
 ingredient030 = Ingredients(
     recipe_id=lentil_soup.id,
-    ingr_id='30',
+    ingr_number='30',
     ingredient='1 T. chopped mint'
     )
 
@@ -381,7 +381,7 @@ session.commit()
 
 ingredient031 = Ingredients(
     recipe_id=lentil_soup.id,
-    ingr_id='31',
+    ingr_number='31',
     ingredient='1/2 tsp. lemon zest'
     )
 
@@ -390,7 +390,7 @@ session.commit()
 
 ingredient032 = Ingredients(
     recipe_id=lentil_soup.id,
-    ingr_id='32',
+    ingr_number='32',
     ingredient='1/2 tsp. lemon juice'
     )
 
@@ -399,7 +399,7 @@ session.commit()
 
 ingredient033 = Ingredients(
     recipe_id=lentil_soup.id,
-    ingr_id='33',
+    ingr_number='33',
     ingredient='1 tsp. honey (optional since I gave up sugar)'
     )
 
@@ -408,7 +408,7 @@ session.commit()
 
 ingredient034 = Ingredients(
     recipe_id=lentil_soup.id,
-    ingr_id='34',
+    ingr_number='34',
     ingredient='Pinch of salt'
     )
 
@@ -594,7 +594,7 @@ session.commit()
 
 ingredient001 = Ingredients(
     recipe_id=roasted_tomato.id,
-    ingr_id='1',
+    ingr_number='1',
     ingredient='1 medium onion, sliced'
     )
 
@@ -603,7 +603,7 @@ session.commit()
 
 ingredient002 = Ingredients(
     recipe_id=roasted_tomato.id,
-    ingr_id='2',
+    ingr_number='2',
     ingredient='2 pints cherry tomatoes'
     )
 
@@ -612,7 +612,7 @@ session.commit()
 
 ingredient003 = Ingredients(
     recipe_id=roasted_tomato.id,
-    ingr_id='3',
+    ingr_number='3',
     ingredient='2 cloves garlic'
     )
 
@@ -621,7 +621,7 @@ session.commit()
 
 ingredient004 = Ingredients(
     recipe_id=roasted_tomato.id,
-    ingr_id='4',
+    ingr_number='4',
     ingredient='2 tablespoons olive oil'
     )
 
@@ -630,7 +630,7 @@ session.commit()
 
 ingredient005 = Ingredients(
     recipe_id=roasted_tomato.id,
-    ingr_id='5',
+    ingr_number='5',
     ingredient='1/4 teaspoon fine sea salt'
     )
 
@@ -639,7 +639,7 @@ session.commit()
 
 ingredient006 = Ingredients(
     recipe_id=roasted_tomato.id,
-    ingr_id='6',
+    ingr_number='6',
     ingredient='1/4 teaspoon pepper'
     )
 
@@ -648,7 +648,7 @@ session.commit()
 
 ingredient007 = Ingredients(
     recipe_id=roasted_tomato.id,
-    ingr_id='7',
+    ingr_number='7',
     ingredient='1 cup low sodium vegetable broth'
     )
 
@@ -657,7 +657,7 @@ session.commit()
 
 ingredient008 = Ingredients(
     recipe_id=roasted_tomato.id,
-    ingr_id='8',
+    ingr_number='8',
     ingredient='1 tablespoon tomato paste'
     )
 
@@ -666,7 +666,7 @@ session.commit()
 
 ingredient009 = Ingredients(
     recipe_id=roasted_tomato.id,
-    ingr_id='9',
+    ingr_number='9',
     ingredient='1/2 teaspoon dried oregano'
     )
 
@@ -675,7 +675,7 @@ session.commit()
 
 ingredient010 = Ingredients(
     recipe_id=roasted_tomato.id,
-    ingr_id='10',
+    ingr_number='10',
     ingredient='1/2 cup canned full-fat coconut milk'
     )
 
@@ -684,7 +684,7 @@ session.commit()
 
 ingredient011 = Ingredients(
     recipe_id=roasted_tomato.id,
-    ingr_id='11',
+    ingr_number='11',
     ingredient='1/4 teaspoon fine sea salt'
     )
 
@@ -693,7 +693,7 @@ session.commit()
 
 ingredient012 = Ingredients(
     recipe_id=roasted_tomato.id,
-    ingr_id='12',
+    ingr_number='12',
     ingredient='plenty of chopped fresh basil, for serving'
     )
 
@@ -702,7 +702,7 @@ session.commit()
 
 ingredient013 = Ingredients(
     recipe_id=roasted_tomato.id,
-    ingr_id='13',
+    ingr_number='13',
     ingredient='your favorite bread (or croutons!), for serving'
     )
 
@@ -792,7 +792,7 @@ session.commit()
 
 ingredient001 = Ingredients(
     recipe_id=coconut_curry.id,
-    ingr_id='1',
+    ingr_number='1',
     ingredient='1 6oz can of clams, drained'
     )
 
@@ -801,7 +801,7 @@ session.commit()
 
 ingredient002 = Ingredients(
     recipe_id=coconut_curry.id,
-    ingr_id='2',
+    ingr_number='2',
     ingredient='1 6oz can of salad shrimp, drained'
     )
 
@@ -810,7 +810,7 @@ session.commit()
 
 ingredient003 = Ingredients(
     recipe_id=coconut_curry.id,
-    ingr_id='3',
+    ingr_number='3',
     ingredient='32 oz low sodium vegetable broth'
     )
 
@@ -819,7 +819,7 @@ session.commit()
 
 ingredient004 = Ingredients(
     recipe_id=coconut_curry.id,
-    ingr_id='4',
+    ingr_number='4',
     ingredient='1 package of frozen stir-fry veggies'
     )
 
@@ -828,7 +828,7 @@ session.commit()
 
 ingredient005 = Ingredients(
     recipe_id=coconut_curry.id,
-    ingr_id='5',
+    ingr_number='5',
     ingredient='2 tbsp coconut milk powder'
     )
 
@@ -837,7 +837,7 @@ session.commit()
 
 ingredient006 = Ingredients(
     recipe_id=coconut_curry.id,
-    ingr_id='6',
+    ingr_number='6',
     ingredient='1 tbsp thai red curry paste'
     )
 
@@ -846,7 +846,7 @@ session.commit()
 
 ingredient007 = Ingredients(
     recipe_id=coconut_curry.id,
-    ingr_id='7',
+    ingr_number='7',
     ingredient='1 tsp dried ginger powder'
     )
 
@@ -907,7 +907,7 @@ session.commit()
 
 ingredient001 = Ingredients(
     recipe_id=pomelo_avocados.id,
-    ingr_id='1',
+    ingr_number='1',
     ingredient='''pomelo - 1 large pomelo (1.5 cups) segmented and pulled apart
     to small pieces (can exchange with 1 large grapefruit and 1 medium
     orange)'''
@@ -918,7 +918,7 @@ session.commit()
 
 ingredient002 = Ingredients(
     recipe_id=pomelo_avocados.id,
-    ingr_id='2',
+    ingr_number='2',
     ingredient='shallots - 4-5 peeled and chopped finely'
     )
 
@@ -927,7 +927,7 @@ session.commit()
 
 ingredient003 = Ingredients(
     recipe_id=pomelo_avocados.id,
-    ingr_id='3',
+    ingr_number='3',
     ingredient='garlic - 2 cloves peeled and chopped finely'
     )
 
@@ -936,7 +936,7 @@ session.commit()
 
 ingredient004 = Ingredients(
     recipe_id=pomelo_avocados.id,
-    ingr_id='4',
+    ingr_number='4',
     ingredient='''crab meat - 450 grams (1 cup) gluten-free imitation crab or
     steamed fresh crab picked over for shells)'''
     )
@@ -946,7 +946,7 @@ session.commit()
 
 ingredient005 = Ingredients(
     recipe_id=pomelo_avocados.id,
-    ingr_id='5',
+    ingr_number='5',
     ingredient='''coconut oil - 2 tablespoons melted or olive oil if you prefer
     (I love that tropical flavor with the coconut oil)'''
     )
@@ -956,7 +956,7 @@ session.commit()
 
 ingredient006 = Ingredients(
     recipe_id=pomelo_avocados.id,
-    ingr_id='6',
+    ingr_number='6',
     ingredient='''lemon juice - juice of a lemon (extra lemon to prepare the
     avocados) You can also use limes but I only had lemons on hand'''
     )
@@ -966,7 +966,7 @@ session.commit()
 
 ingredient007 = Ingredients(
     recipe_id=pomelo_avocados.id,
-    ingr_id='7',
+    ingr_number='7',
     ingredient='''chili peppers - 1 finely chopped (to taste) I used a Thai
     chili but you can use any kind you wish or none at all if you like it
     mild'''
@@ -977,7 +977,7 @@ session.commit()
 
 ingredient008 = Ingredients(
     recipe_id=pomelo_avocados.id,
-    ingr_id='8',
+    ingr_number='8',
     ingredient='salt and pepper - to taste '
     )
 
@@ -986,7 +986,7 @@ session.commit()
 
 ingredient009 = Ingredients(
     recipe_id=pomelo_avocados.id,
-    ingr_id='9',
+    ingr_number='9',
     ingredient='avocados - 2 - 3 whole'
     )
 
@@ -1087,7 +1087,7 @@ session.commit()
 
 ingredient001 = Ingredients(
     recipe_id=jalapeno_shrimp.id,
-    ingr_id='1',
+    ingr_number='1',
     ingredient='8 oz fresh or frozen large shrimp in shells (peel & devein)'
     )
 
@@ -1096,7 +1096,7 @@ session.commit()
 
 ingredient002 = Ingredients(
     recipe_id=jalapeno_shrimp.id,
-    ingr_id='2',
+    ingr_number='2',
     ingredient='1 1/2 cup fresh cilantro (washed)'
     )
 
@@ -1105,7 +1105,7 @@ session.commit()
 
 ingredient003 = Ingredients(
     recipe_id=jalapeno_shrimp.id,
-    ingr_id='3',
+    ingr_number='3',
     ingredient='1/4 cup squeezed lime juice'
     )
 
@@ -1114,7 +1114,7 @@ session.commit()
 
 ingredient004 = Ingredients(
     recipe_id=jalapeno_shrimp.id,
-    ingr_id='4',
+    ingr_number='4',
     ingredient='2 fresh jalapeno peppers (seeded)'
     )
 
@@ -1123,7 +1123,7 @@ session.commit()
 
 ingredient005 = Ingredients(
     recipe_id=jalapeno_shrimp.id,
-    ingr_id='5',
+    ingr_number='5',
     ingredient='2 tbsp olive oil'
     )
 
@@ -1132,7 +1132,7 @@ session.commit()
 
 ingredient006 = Ingredients(
     recipe_id=jalapeno_shrimp.id,
-    ingr_id='6',
+    ingr_number='6',
     ingredient='1 medium mango (peeled and cut into small strips)'
     )
 
@@ -1141,7 +1141,7 @@ session.commit()
 
 ingredient007 = Ingredients(
     recipe_id=jalapeno_shrimp.id,
-    ingr_id='7',
+    ingr_number='7',
     ingredient='1 cup jicama (peeled and cut into small strips)'
     )
 
@@ -1150,7 +1150,7 @@ session.commit()
 
 ingredient008 = Ingredients(
     recipe_id=jalapeno_shrimp.id,
-    ingr_id='8',
+    ingr_number='8',
     ingredient='1/4 cup red onion (chopped)'
     )
 
@@ -1159,7 +1159,7 @@ session.commit()
 
 ingredient009 = Ingredients(
     recipe_id=jalapeno_shrimp.id,
-    ingr_id='9',
+    ingr_number='9',
     ingredient='1/4 cup cucumber (sliced)'
     )
 
@@ -1168,7 +1168,7 @@ session.commit()
 
 ingredient010 = Ingredients(
     recipe_id=jalapeno_shrimp.id,
-    ingr_id='10',
+    ingr_number='10',
     ingredient='salt to taste'
     )
 
@@ -1254,7 +1254,7 @@ session.commit()
 
 ingredient001 = Ingredients(
     recipe_id=sesame_chicken.id,
-    ingr_id='1',
+    ingr_number='1',
     ingredient='Ground chicken - 1/2 pound (8 ounces)'
     )
 
@@ -1263,7 +1263,7 @@ session.commit()
 
 ingredient002 = Ingredients(
     recipe_id=sesame_chicken.id,
-    ingr_id='2',
+    ingr_number='2',
     ingredient='Tofu - 1/3 cup firm'
     )
 
@@ -1272,7 +1272,7 @@ session.commit()
 
 ingredient003 = Ingredients(
     recipe_id=sesame_chicken.id,
-    ingr_id='3',
+    ingr_number='3',
     ingredient='Green onions - 1/4 cup chopped finely '
     )
 
@@ -1281,7 +1281,7 @@ session.commit()
 
 ingredient004 = Ingredients(
     recipe_id=sesame_chicken.id,
-    ingr_id='4',
+    ingr_number='4',
     ingredient='Miso paste - 1 tablespoon (gluten-free)'
     )
 
@@ -1290,7 +1290,7 @@ session.commit()
 
 ingredient005 = Ingredients(
     recipe_id=sesame_chicken.id,
-    ingr_id='5',
+    ingr_number='5',
     ingredient='Ginger - 1 tablespoon'
     )
 
@@ -1299,7 +1299,7 @@ session.commit()
 
 ingredient006 = Ingredients(
     recipe_id=sesame_chicken.id,
-    ingr_id='6',
+    ingr_number='6',
     ingredient='Tamari (soy sauce) - 1 tablespoon'
     )
 
@@ -1308,7 +1308,7 @@ session.commit()
 
 ingredient007 = Ingredients(
     recipe_id=sesame_chicken.id,
-    ingr_id='7',
+    ingr_number='7',
     ingredient='White pepper - 1/2 teaspoon'
     )
 
@@ -1317,7 +1317,7 @@ session.commit()
 
 ingredient008 = Ingredients(
     recipe_id=sesame_chicken.id,
-    ingr_id='8',
+    ingr_number='8',
     ingredient='Sesame oil - 1 teaspoon'
     )
 
@@ -1326,7 +1326,7 @@ session.commit()
 
 ingredient009 = Ingredients(
     recipe_id=sesame_chicken.id,
-    ingr_id='9',
+    ingr_number='9',
     ingredient='Sesame seeds - 3 tablespoons toasted white '
     )
 
@@ -1335,7 +1335,7 @@ session.commit()
 
 ingredient010 = Ingredients(
     recipe_id=sesame_chicken.id,
-    ingr_id='10',
+    ingr_number='10',
     ingredient='Ponzu Dipping Sauce'
     )
 
@@ -1344,7 +1344,7 @@ session.commit()
 
 ingredient011 = Ingredients(
     recipe_id=sesame_chicken.id,
-    ingr_id='11',
+    ingr_number='11',
     ingredient='Tamari (soy sauce) - 3 tablespoons'
     )
 
@@ -1353,7 +1353,7 @@ session.commit()
 
 ingredient012 = Ingredients(
     recipe_id=sesame_chicken.id,
-    ingr_id='12',
+    ingr_number='12',
     ingredient='Lime juice - 2 tablespoons'
     )
 
@@ -1453,7 +1453,7 @@ session.commit()
 
 ingredient001 = Ingredients(
     recipe_id=parmesan_sticks.id,
-    ingr_id='1',
+    ingr_number='1',
     ingredient='1 package (13.8 ounces) refrigerated pizza dough'
     )
 
@@ -1462,7 +1462,7 @@ session.commit()
 
 ingredient002 = Ingredients(
     recipe_id=parmesan_sticks.id,
-    ingr_id='2',
+    ingr_number='2',
     ingredient='3/4 cup light garlic-and-herb spreadable cheese'
     )
 
@@ -1471,7 +1471,7 @@ session.commit()
 
 ingredient003 = Ingredients(
     recipe_id=parmesan_sticks.id,
-    ingr_id='3',
+    ingr_number='3',
     ingredient='3/4 cup shredded Italian cheese blend'
     )
 
@@ -1480,7 +1480,7 @@ session.commit()
 
 ingredient004 = Ingredients(
     recipe_id=parmesan_sticks.id,
-    ingr_id='4',
+    ingr_number='4',
     ingredient='1/4 cup grated Parmesan cheese'
     )
 
@@ -1489,7 +1489,7 @@ session.commit()
 
 ingredient005 = Ingredients(
     recipe_id=parmesan_sticks.id,
-    ingr_id='5',
+    ingr_number='5',
     ingredient='1/2 teaspoon dried oregano'
     )
 
@@ -1498,7 +1498,7 @@ session.commit()
 
 ingredient006 = Ingredients(
     recipe_id=parmesan_sticks.id,
-    ingr_id='6',
+    ingr_number='6',
     ingredient='''Warm marinara sauce and/or reduced-fat ranch salad dressing
     (optional)'''
     )
@@ -1574,7 +1574,7 @@ session.commit()
 
 ingredient001 = Ingredients(
     recipe_id=party_pitas.id,
-    ingr_id='1',
+    ingr_number='1',
     ingredient='1 package (8 ounces) cream cheese, softened'
     )
 
@@ -1583,7 +1583,7 @@ session.commit()
 
 ingredient002 = Ingredients(
     recipe_id=party_pitas.id,
-    ingr_id='2',
+    ingr_number='2',
     ingredient='1/2 cup mayonnaise'
     )
 
@@ -1592,7 +1592,7 @@ session.commit()
 
 ingredient003 = Ingredients(
     recipe_id=party_pitas.id,
-    ingr_id='3',
+    ingr_number='3',
     ingredient='1/2 teaspoon dill weed'
     )
 
@@ -1601,7 +1601,7 @@ session.commit()
 
 ingredient004 = Ingredients(
     recipe_id=party_pitas.id,
-    ingr_id='4',
+    ingr_number='4',
     ingredient='1/4 teaspoon garlic salt'
     )
 
@@ -1610,7 +1610,7 @@ session.commit()
 
 ingredient005 = Ingredients(
     recipe_id=party_pitas.id,
-    ingr_id='5',
+    ingr_number='5',
     ingredient='4 whole pita breads'
     )
 
@@ -1619,7 +1619,7 @@ session.commit()
 
 ingredient006 = Ingredients(
     recipe_id=party_pitas.id,
-    ingr_id='6',
+    ingr_number='6',
     ingredient='1-1/2 cups fresh baby spinach'
     )
 
@@ -1628,7 +1628,7 @@ session.commit()
 
 ingredient007 = Ingredients(
     recipe_id=party_pitas.id,
-    ingr_id='7',
+    ingr_number='7',
     ingredient='1 pound shaved fully cooked ham'
     )
 
@@ -1637,7 +1637,7 @@ session.commit()
 
 ingredient008 = Ingredients(
     recipe_id=party_pitas.id,
-    ingr_id='8',
+    ingr_number='8',
     ingredient='1/2 pound thinly sliced Monterey Jack cheese'
     )
 
@@ -1693,7 +1693,7 @@ session.commit()
 
 ingredient001 = Ingredients(
     recipe_id=tuna_cups.id,
-    ingr_id='1',
+    ingr_number='1',
     ingredient='3 English cucumbers'
     )
 
@@ -1702,7 +1702,7 @@ session.commit()
 
 ingredient002 = Ingredients(
     recipe_id=tuna_cups.id,
-    ingr_id='2',
+    ingr_number='2',
     ingredient='2/3 cup plain nonfat Greek yogurt'
     )
 
@@ -1711,7 +1711,7 @@ session.commit()
 
 ingredient003 = Ingredients(
     recipe_id=tuna_cups.id,
-    ingr_id='3',
+    ingr_number='3',
     ingredient='1/3 cup coarsely chopped pitted Kalamata olives'
     )
 
@@ -1720,7 +1720,7 @@ session.commit()
 
 ingredient004 = Ingredients(
     recipe_id=tuna_cups.id,
-    ingr_id='4',
+    ingr_number='4',
     ingredient='1/3 cup finely chopped red onion'
     )
 
@@ -1729,7 +1729,7 @@ session.commit()
 
 ingredient005 = Ingredients(
     recipe_id=tuna_cups.id,
-    ingr_id='5',
+    ingr_number='5',
     ingredient='2 tablespoons fresh lemon juice'
     )
 
@@ -1738,7 +1738,7 @@ session.commit()
 
 ingredient006 = Ingredients(
     recipe_id=tuna_cups.id,
-    ingr_id='6',
+    ingr_number='6',
     ingredient='1/4 teaspoon garlic salt'
     )
 
@@ -1747,7 +1747,7 @@ session.commit()
 
 ingredient007 = Ingredients(
     recipe_id=tuna_cups.id,
-    ingr_id='7',
+    ingr_number='7',
     ingredient='''2 cans (5 ounces each) solid white albacore tuna in water,
     drained and flaked'''
     )

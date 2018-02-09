@@ -29,7 +29,7 @@ class Ingredients(Base):
     __tablename__ = 'ingredients'
 
     recipe_id = Column(Integer, ForeignKey('recipe.id'))
-    ingr_id = Column(Integer)
+    ingr_number = Column(Integer)
     ingr_index = Column(Integer, primary_key=True)
     ingredient = Column(String)
 
