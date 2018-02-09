@@ -34,10 +34,11 @@
                 <section>
                     <a href="{{url_for('recipe',course_id=i.course_id, recipe_id=i.id)}}"><img src="{{i.image}}" alt="{{i.name}}"></a>
                     <p>{{i.name}}</p>
+                    <a href="{{url_for('deleteRecipe', course_id=course.id, recipe_id=i.id)}}">Delete</a>
                 </section>
                 
                 {% endfor %}
-                
+
             </main>
         </div> 
 

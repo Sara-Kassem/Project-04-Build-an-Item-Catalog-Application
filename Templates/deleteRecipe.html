@@ -10,7 +10,17 @@
 	
     <body>
         <div class="container">
-            
+
+            <h2>Are you sure you want to delete {{recipe.name}}</h2>
+
+            <form action="{{url_for('deleteRecipe', course_id=course.id, recipe_id=recipe.id)}}" method="POST">
+			
+                    <input type="submit" value="Delete">
+        
+                    <a href="{{url_for('courseRecipes', course_id=course.id)}}">Cancel</a>
+        
+                </form>
+
         </div>
     </body>
 

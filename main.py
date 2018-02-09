@@ -60,6 +60,21 @@ def recipe(course_id, recipe_id):
     directions=directions
     )
 
+@app.route('/course/<int:course_id>/recipes/<int:recipe_id>/delete', methods=['GET', 'POST'])
+def deleteRecipe(course_id, recipe_id):
+    course = session.query(Course).filter_by(id=course_id).one()
+    recipe = session.query(Recipe).filter_by(id=recipe_id).one()
+
+    if request.method == 'POST':
+        session.delete(recipe)
+        session.commit()
+
+        return redirect('courseRecipes', course_id=course.id)
+    else:
+        return render_template('deleteRecipe.html',
+        course=course,
+        recipe=recipe)
+
 if __name__ == '__main__':
     app.debug = True
     app.run(host='0.0.0.0', port=7070)
