@@ -6,6 +6,7 @@ from database_setup import Base, Course, Recipe, Ingredients, Directions
 
 app = Flask(__name__)
 
+latestRecipesLimit = 3
 
 # ----------------------- #
 #        SQLAlchemy       #
@@ -17,6 +18,17 @@ Base.metadata.bind = engine
 DBSession = sessionmaker(bind=engine)
 session = DBSession()
 
+# ----------------------- #
+#        Home Page        #
+# ----------------------- #
+
+@app.route('/')
+@app.route('/healthy-recipes')
+def homePage():
+    courses = session.query(Course).order_by(Course.id).all()
+    latestRecipes = session.query(Recipe).order_by(Recipe.id.desc()).all()
+
+    return render_template('index.html', courses=courses, latestRecipes=latestRecipes)
 
 if __name__ == '__main__':
     app.debug = True
