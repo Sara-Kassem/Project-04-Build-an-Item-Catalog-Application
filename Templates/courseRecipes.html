@@ -30,7 +30,7 @@
                 {% for i in recipes %}
                 
                 <section>
-                    <a href="#"><img src="{{i.image}}" alt="{{i.name}}"></a>
+                    <a href="{{url_for('recipe', recipe_id=i.id)}}"><img src="{{i.image}}" alt="{{i.name}}"></a>
                     <p>{{i.name}}</p>
                 </section>
                 
