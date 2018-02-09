@@ -37,10 +37,12 @@ def homePage():
 def courseRecipes(course_id):
     courses = session.query(Course).order_by(Course.id).all()
     recipes = session.query(Recipe).order_by(Recipe.name).filter_by(course_id=course_id).all()
+    course = session.query(Course).filter_by(id=course_id).one()
 
     return render_template('courseRecipes.html',
     courses=courses,
-    recipes=recipes)
+    recipes=recipes,
+    course=course)
 
 @app.route('/recipes/<int:recipe_id>')
 def recipe(recipe_id):
