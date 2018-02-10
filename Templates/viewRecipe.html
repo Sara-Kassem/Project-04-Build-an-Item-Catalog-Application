@@ -11,12 +11,15 @@
 	<body>
 
         <div class="container">
+
+            <!-- Start Header -->
             <header>
 
                 <a href="{{url_for('homePage')}}"><img src="../images/healthy-recipes-logo.png" alt="Healty Recipes Logo"></a>
 
                 <nav>
                     <ul>
+                    <!-- iterate through all courses -->
                     {%for i in all_courses%}
                         <li><a href="{{url_for('courseRecipes', course_id=i.id)}}">{{i.name}}</a></li>
                     {% endfor %}
@@ -24,26 +27,39 @@
                 </nav>
 
             </header>
+            <!-- End Header -->
 
+            <!-- Start Main -->
             <main>
+
+                <!-- Display Recipe Name -->
                 <h1>{{viewRecipe.name}}</h1>
+
+                <!-- Display Recipe Image -->
                 <img src="{{viewRecipe.image}}">
+                
                 <section>
+                   
                     <h2>Ingredients:</h2>
                     <ul>
+                        <!-- iterate through all ingredients -->
                         {% for i in ingredients %}
                         <li>{{i.ingredient}}</li>
                         {% endfor %}
                     </ul>
+
                 </section>
 
                 <section>
+
                     <h2>Directions:</h2>
                     <ul>
+                        <!-- iterate through all Directions -->
                         {% for i in directions %}
                         <li>{{i.step}}</li>
                         {% endfor %}
                     </ul>
+
                 </section>
                 
                 <a href="{{url_for('editRecipe', course_id=recipeCourse.id, recipe_id=viewRecipe.id)}}">Edit Recipe</a>
@@ -53,6 +69,8 @@
                 <a href="{{url_for('courseRecipes', course_id=recipeCourse.id)}}">Back to {{recipeCourse.name}}</a>
 
             </main>
+            <!-- End Main -->
+
         </div> 
 
 	</body>

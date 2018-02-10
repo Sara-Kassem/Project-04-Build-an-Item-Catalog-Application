@@ -10,12 +10,15 @@
 	
     <body>
         <div class="container">
+
+            <!-- Start Header -->
             <header>
 
                 <a href="{{url_for('homePage')}}"><img src="../images/healthy-recipes-logo.png" alt="Healty Recipes Logo"></a>
 
                 <nav>
                     <ul>
+                    <!-- iterate through all courses -->
                     {%for i in all_courses%}
                         <li><a href="{{url_for('courseRecipes', course_id=i.id)}}">{{i.name}}</a></li>
                     {% endfor %}
@@ -23,8 +26,12 @@
                 </nav>
         
             </header>
+            <!-- End Header -->
 
+            <!-- Start Main -->
             <main>
+
+                <!-- Display Recipe Name -->
                 <h2>Are you sure you want to delete {{deleteRecipe.name}}</h2>
 
                 <form action="{{url_for('deleteRecipe', course_id=recipeCourse.id, recipe_id=deleteRecipe.id)}}" method="POST">
@@ -34,7 +41,9 @@
                     <a href="{{url_for('viewRecipe', course_id=recipeCourse.id, recipe_id=deleteRecipe.id)}}">Cancel</a>
             
                 </form>
+                
             </main>
+            <!-- End Main -->
 
         </div>
     </body>

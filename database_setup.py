@@ -8,6 +8,7 @@ from sqlalchemy import create_engine
 Base = declarative_base()
 
 
+# create a table for courses
 class Course(Base):
     __tablename__ = 'course'
 
@@ -15,6 +16,7 @@ class Course(Base):
     name = Column(String, nullable=False)
 
 
+# create a table for recipes
 class Recipe(Base):
     __tablename__ = 'recipe'
 
@@ -23,6 +25,8 @@ class Recipe(Base):
     image = Column(String)
     course_id = Column(Integer, ForeignKey('course.id'))
 
+
+# create a table for ingredients
 class Ingredients(Base):
     __tablename__ = 'ingredients'
 
@@ -32,6 +36,7 @@ class Ingredients(Base):
     ingredient = Column(String, nullable=False)
 
 
+# create a table for directions
 class Directions(Base):
     __tablename__ = 'directions'
 

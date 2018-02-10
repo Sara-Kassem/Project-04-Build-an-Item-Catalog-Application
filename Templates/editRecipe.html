@@ -9,13 +9,17 @@
 	</head>
 	
     <body>
+
         <div class="container">
+
+            <!-- Start Header -->
             <header>
 
                 <a href="{{url_for('homePage')}}"><img src="../images/healthy-recipes-logo.png" alt="Healty Recipes Logo"></a>
 
                 <nav>
                     <ul>
+                    <!-- iterate through all courses -->
                     {%for i in all_courses%}
                         <li><a href="{{url_for('courseRecipes', course_id=i.id)}}">{{i.name}}</a></li>
                     {% endfor %}
@@ -23,9 +27,12 @@
                 </nav>
     
             </header>
+            <!-- End Header -->
 
+            <!-- Start Main -->
             <main>
 
+                <!-- Display Recipe Name -->
                 <h2>Edit {{editRecipe.name}}</h2>
 
                 <form action="{{url_for('editRecipe', course_id=recipeCourse.id, recipe_id=editRecipe.id)}}" method="POST">
@@ -34,7 +41,7 @@
     
     
                     <select name="updateCourse">
-                        
+                        <!-- iterate through all courses -->
                         {% for i in all_courses %}
                         <option value="{{i.name}}">{{i.name}}</option> 
                         {% endfor %}
@@ -43,13 +50,15 @@
 
                     <p id="RecipeHint">
                         Hint: for the Ingredients and Directions to be displayed correctly on the website, 
-                        add each ingredient/step in a seperate line.</br>
+                        add each ingredient/step in a seperate line.<br/>
                         You don't need to add a number for ordering before any ingredient/step.
                     </p>
-    
+
+                    <!-- iterate through all ingredients -->
                     <textarea contenteditable="true" name="updateIngredients" required>{% for i in ingredients %}
 {{i.ingredient}}{% endfor %}</textarea>
     
+                    <!-- iterate through all Directions -->
                     <textarea contenteditable="true" name="updateDirections" required>{% for i in directions %}
 {{i.step}}{% endfor %}</textarea>
                 
@@ -60,8 +69,10 @@
                 </form>
 
             </main>
+            <!-- End Main -->
                     
         </div>
+
     </body>
 
 </html>
