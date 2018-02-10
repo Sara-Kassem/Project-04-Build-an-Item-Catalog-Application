@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+	
+	<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<title>Healthy Recipes</title>
+	</head>
+	
+    <body>
+        <div class="container">
+            <header>
+
+                <a href="{{url_for('homePage')}}"><img src="../images/healthy-recipes-logo.png" alt="Healty Recipes Logo"></a>
+
+                <nav>
+                    <ul>
+                    {%for i in all_courses%}
+                        <li><a href="{{url_for('courseRecipes', course_id=i.id)}}">{{i.name}}</a></li>
+                    {% endfor %}
+                    </ul>
+                </nav>
+    
+            </header>
+
+            <main>
+
+                <h2>Edit {{editRecipe.name}}</h2>
+
+                <form action="{{url_for('editRecipe', course_id=recipeCourse.id, recipe_id=editRecipe.id)}}" method="POST">
+    
+                    <input type="text" name="updateName" placeholder="{{editRecipe.name}}">
+    
+    
+                    <select name="updateCourse">
+                        
+                        {% for i in all_courses %}
+                        <option value="{{i.name}}">{{i.name}}</option> 
+                        {% endfor %}
+    
+                    </select>
+
+                    <p id="RecipeHint">Hint: for the Ingredients and Directions to be displayed
+                            correctly on the website, add each ingredient/step in a seperate line</p>
+    
+                    <textarea contenteditable="true" name="updateIngredients">{% for i in ingredients %}
+{{i.ingredient}}{% endfor %}</textarea>
+    
+                    <textarea contenteditable="true" name="updateDirections">{% for i in directions %}
+{{i.step}}{% endfor %}</textarea>
+                
+                    <input type="submit" value="Edit">
+        
+                    <a href="{{url_for('viewRecipe', course_id=recipeCourse.id, recipe_id=editRecipe.id)}}">Cancel</a>
+                
+                </form>
+
+            </main>
+                    
+        </div>
+    </body>
+
+</html>

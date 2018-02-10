@@ -99,7 +99,6 @@ lentil_soup = Recipe(
     name='Crushed Lentil Soup with Lamb Meatballs',
     image="",
     course_id=soup.id,
-    course=soup
     )
 
 session.add(lentil_soup)
@@ -582,7 +581,6 @@ roasted_tomato = Recipe(
     name='Roasted Cherry Tomato Soup',
     image="",
     course_id=soup.id,
-    course=soup
     )
 
 session.add(roasted_tomato)
@@ -779,8 +777,7 @@ coconut_curry = Recipe(
     id='3',
     name='7 Ingredient Coconut Curry Seafood Soup',
     image="",
-    course_id=soup.id,
-    course=soup
+    course_id=soup.id
     )
 
 session.add(coconut_curry)
@@ -894,8 +891,7 @@ pomelo_avocados = Recipe(
     id='4',
     name='Thai Pomelo Crab Salad Avocados',
     image="",
-    course_id=side_dish.id,
-    course=side_dish
+    course_id=side_dish.id
     )
 
 session.add(pomelo_avocados)
@@ -1074,8 +1070,7 @@ jalapeno_shrimp = Recipe(
     id='5',
     name='Cilantro-Jalapeno Grilled Shrimp',
     image="",
-    course_id=side_dish.id,
-    course=side_dish
+    course_id=side_dish.id
     )
 
 session.add(jalapeno_shrimp)
@@ -1241,8 +1236,7 @@ sesame_chicken = Recipe(
     id='6',
     name='Sesame Miso Chicken Meatballs',
     image="",
-    course_id=side_dish.id,
-    course=side_dish
+    course_id=side_dish.id
     )
 
 session.add(sesame_chicken)
@@ -1440,8 +1434,7 @@ parmesan_sticks = Recipe(
     id='7',
     name='Garlic-Herb Parmesan Dipping Sticks',
     image="",
-    course_id=appetizer.id,
-    course=appetizer
+    course_id=appetizer.id
     )
 
 session.add(parmesan_sticks)
@@ -1561,8 +1554,7 @@ party_pitas = Recipe(
     id='8',
     name='Party Pitas Recipe',
     image="",
-    course_id=appetizer.id,
-    course=appetizer
+    course_id=appetizer.id
     )
 
 session.add(party_pitas)
@@ -1680,8 +1672,7 @@ tuna_cups = Recipe(
     id='9',
     name='Mediterranean Tuna Cups',
     image="",
-    course_id=appetizer.id,
-    course=appetizer
+    course_id=appetizer.id
     )
 
 session.add(tuna_cups)

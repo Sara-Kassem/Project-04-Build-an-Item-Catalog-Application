@@ -12,19 +12,16 @@ class Course(Base):
     __tablename__ = 'course'
 
     id = Column(Integer, primary_key=True)
-    name = Column(String)
+    name = Column(String, nullable=False)
 
 
 class Recipe(Base):
     __tablename__ = 'recipe'
 
     id = Column(Integer, primary_key=True)
-    name = Column(String)
+    name = Column(String, nullable=False)
     image = Column(String)
     course_id = Column(Integer, ForeignKey('course.id'))
-    course = relationship('Course',
-    primaryjoin='and_(Recipe.course_id==Course.id)')
-
 
 class Ingredients(Base):
     __tablename__ = 'ingredients'
@@ -32,7 +29,7 @@ class Ingredients(Base):
     recipe_id = Column(Integer, ForeignKey('recipe.id'))
     ingr_number = Column(Integer)
     ingr_index = Column(Integer, primary_key=True)
-    ingredient = Column(String)
+    ingredient = Column(String, nullable=False)
 
 
 class Directions(Base):
@@ -41,7 +38,7 @@ class Directions(Base):
     recipe_id = Column(Integer, ForeignKey('recipe.id'))
     step_number = Column(Integer)
     step_index = Column(Integer, primary_key=True)
-    step = Column(String)
+    step = Column(String, nullable=False)
 
 
 engine = create_engine('sqlite:///healthyRecipes.db')

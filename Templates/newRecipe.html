@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+	
+	<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<title>Healthy Recipes</title>
+	</head>
+	
+    <body>
+        <div class="container">
+            <header>
+
+                <a href="{{url_for('homePage')}}"><img src="../images/healthy-recipes-logo.png" alt="Healty Recipes Logo"></a>
+
+                <nav>
+                    <ul>
+                    {%for i in all_courses%}
+                        <li><a href="{{url_for('courseRecipes', course_id=i.id)}}">{{i.name}}</a></li>
+                    {% endfor %}
+                    </ul>
+                </nav>
+    
+            </header>
+
+            <main>
+                <h2>Add New Recipe</h2>
+
+                <form action="{{url_for('newRecipe', course_id=recipeCourse.id)}}" method="POST">
+
+                    <label for="newRecipeName">Recipe Name:</label>
+
+                    <input type="text" id="newRecipeName" name="newRecipeName" placeholder="New Recipe Name" required>
+
+                    <label for="newRecipeCourse">Course:</label>
+
+                    <select id="newRecipeCourse" name="newRecipeCourse" required>
+                        
+                        {% for i in all_courses %}
+                        <option value="{{i.name}}">{{i.name}}</option> 
+                        {% endfor %}
+    
+                    </select>
+
+                    <p id="RecipeHint">Hint: for the Ingredients and Directions to be displayed
+                        correctly on the website, add each ingredient/step in a seperate line</p>
+
+                    <label for="newIngredients">Ingredients:</label>
+
+                    <textarea id="newIngredients" contenteditable="true" name="newIngredients" required></textarea>
+
+                    <label for="newDirections">Directions:</label>
+
+                    <textarea id="newDirections" contenteditable="true" name="newDirections" required></textarea>
+
+                    <input type="submit" value="Add Recipe">
+
+                    <a href="{{url_for('courseRecipes', course_id=recipeCourse.id)}}">Cancel</a>
+            
+                </form>
+            </main>
+
+        </div>
+    </body>
+
+</html>
