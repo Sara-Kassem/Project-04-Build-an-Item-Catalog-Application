@@ -41,8 +41,11 @@
     
                     </select>
 
-                    <p id="RecipeHint">Hint: for the Ingredients and Directions to be displayed
-                            correctly on the website, add each ingredient/step in a seperate line</p>
+                    <p id="RecipeHint">
+                        Hint: for the Ingredients and Directions to be displayed correctly on the website, 
+                        add each ingredient/step in a seperate line.</br>
+                        You don't need to add a number for ordering before any ingredient/step.
+                    </p>
     
                     <textarea contenteditable="true" name="updateIngredients" required>{% for i in ingredients %}
 {{i.ingredient}}{% endfor %}</textarea>
