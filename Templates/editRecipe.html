@@ -5,7 +5,7 @@
 	<head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta charset="utf-8">
-		<title>Healthy Recipes - Edit {{editRecipe.name}}{{}}</title>
+		<title>Healthy Recipes - Edit {{editRecipe.name}}</title>
 	</head>
 	
     <body>
@@ -44,10 +44,10 @@
                     <p id="RecipeHint">Hint: for the Ingredients and Directions to be displayed
                             correctly on the website, add each ingredient/step in a seperate line</p>
     
-                    <textarea contenteditable="true" name="updateIngredients">{% for i in ingredients %}
+                    <textarea contenteditable="true" name="updateIngredients" required>{% for i in ingredients %}
 {{i.ingredient}}{% endfor %}</textarea>
     
-                    <textarea contenteditable="true" name="updateDirections">{% for i in directions %}
+                    <textarea contenteditable="true" name="updateDirections" required>{% for i in directions %}
 {{i.step}}{% endfor %}</textarea>
                 
                     <input type="submit" value="Edit">
