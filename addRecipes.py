@@ -421,8 +421,10 @@ session.commit()
 direction001 = Directions(
     recipe_id=lentil_soup.id,
     step_number='1',
-    step='''In a large stock pot on medium-high heat, saute onion and garlic
-    for a few minutes or until onion is tender and translucent.'''
+    step=(
+        "In a large stock pot on medium-high heat, saute onion and garlic "
+        "for a few minutes or until onion is tender and translucent."
+        )
     )
 
 session.add(direction001)
@@ -431,8 +433,10 @@ session.commit()
 direction002 = Directions(
     recipe_id=lentil_soup.id,
     step_number='2',
-    step='''Add 5 c. vegetable broth, lentils, brown rice, curry powder, sea
-    salt, crushed red pepper.'''
+    step=(
+        "Add 5 c. vegetable broth, lentils, brown rice, curry powder, sea "
+        "salt, crushed red pepper."
+        )
     )
 
 session.add(direction002)
@@ -441,8 +445,10 @@ session.commit()
 direction003 = Directions(
     recipe_id=lentil_soup.id,
     step_number='3',
-    step='''Bring to a boil and then reduce to a simmer. Cover and cook for
-    about 20 minutes or until tender.'''
+    step=(
+        "Bring to a boil and then reduce to a simmer. Cover and cook for "
+        "about 20 minutes or until tender."
+        )
     )
 
 session.add(direction003)
@@ -451,8 +457,10 @@ session.commit()
 direction004 = Directions(
     recipe_id=lentil_soup.id,
     step_number='4',
-    step='''While the soup is cooking, prepare the meatballs. Preheat the oven
-    to 350 degrees.'''
+    step=(
+        "While the soup is cooking, prepare the meatballs. Preheat the oven "
+        "to 350 degrees."
+        )
     )
 
 session.add(direction004)
@@ -470,9 +478,11 @@ session.commit()
 direction006 = Directions(
     recipe_id=lentil_soup.id,
     step_number='6',
-    step='''In a large bowl, using two forks, combine lamb, almonds, onion,
-    raisins, egg, soaked breadcrumbs, garlic, parsley, cilantro, crushed red
-    pepper salt and pepper.'''
+    step=(
+        "In a large bowl, using two forks, combine lamb, almonds, onion, "
+        "raisins, egg, soaked breadcrumbs, garlic, parsley, cilantro, crushed red "
+        "pepper salt and pepper."
+        )
     )
 
 session.add(direction006)
@@ -490,8 +500,10 @@ session.commit()
 direction008 = Directions(
     recipe_id=lentil_soup.id,
     step_number='8',
-    step='''Heat large oven proof skillet with olive oil. Sear the meatballs on
-    all sides over high heat.'''
+    step=(
+        "Heat large oven proof skillet with olive oil. Sear the meatballs on "
+        "all sides over high heat."
+        )
     )
 
 session.add(direction008)
@@ -500,8 +512,10 @@ session.commit()
 direction009 = Directions(
     recipe_id=lentil_soup.id,
     step_number='9',
-    step='''Transfer the skillet to the oven and cook for about 15 minutes or
-    until done through.'''
+    step=(
+        "Transfer the skillet to the oven and cook for about 15 minutes or "
+        "until done through."
+        )
     )
 
 session.add(direction009)
@@ -510,9 +524,11 @@ session.commit()
 direction010 = Directions(
     recipe_id=lentil_soup.id,
     step_number='10',
-    step='''While the meatballs are cooking, remove about 1 c. of the lentils &
-    rice mixture and the bay leaves. Set lentils and rice mixture aside.
-    Discard the bay leaves.'''
+    step=(
+        "While the meatballs are cooking, remove about 1 c. of the lentils & "
+        "rice mixture and the bay leaves. Set lentils and rice mixture aside. "
+        "Discard the bay leaves."
+        )
     )
 
 session.add(direction010)
@@ -521,10 +537,12 @@ session.commit()
 direction011 = Directions(
     recipe_id=lentil_soup.id,
     step_number='11',
-    step='''Using a immersion blender, blend the soup until smooth. You can
-    also use a food processor or a regular blender. If using a blender, allow
-    the soup to cool for about 5-10 minutes and then blend carefully. No
-    explosions please!! That\'s why I love my immersion blender.'''
+    step=(
+        "Using a immersion blender, blend the soup until smooth. You can "
+        "also use a food processor or a regular blender. If using a blender, allow "
+        "the soup to cool for about 5-10 minutes and then blend carefully. No "
+        "explosions please!! That\'s why I love my immersion blender."
+        )
     )
 
 session.add(direction011)
@@ -533,8 +551,10 @@ session.commit()
 direction012 = Directions(
     recipe_id=lentil_soup.id,
     step_number='12',
-    step='''Once blended and back in the same pot, add the reserved lentils and
-    rice back in for some texture.'''
+    step=(
+        "Once blended and back in the same pot, add the reserved lentils and "
+        "rice back in for some texture."
+        )
     )
 
 session.add(direction012)
@@ -543,8 +563,10 @@ session.commit()
 direction013 = Directions(
     recipe_id=lentil_soup.id,
     step_number='13',
-    step='''Add 2 more cups of vegetable broth, stir and cook for a few minutes
-    more. Keep warm.'''
+    step=(
+        "Add 2 more cups of vegetable broth, stir and cook for a few minutes "
+        "more. Keep warm."
+        )
     )
 
 session.add(direction013)
@@ -553,8 +575,10 @@ session.commit()
 direction014 = Directions(
     recipe_id=lentil_soup.id,
     step_number='14',
-    step='''Make the yogurt sauce by combining the yogurt, mint, lemon zest,
-    juice, honey, if using and salt.'''
+    step=(
+        "Make the yogurt sauce by combining the yogurt, mint, lemon zest, "
+        "juice, honey, if using and salt."
+        )
     )
 
 session.add(direction014)
@@ -563,8 +587,10 @@ session.commit()
 direction015 = Directions(
     recipe_id=lentil_soup.id,
     step_number='15',
-    step='''Serve the soup up with the meatballs and drizzle with the yogurt
-    sauce. Say Grace and enjoy!!'''
+    step=(
+        "Serve the soup up with the meatballs and drizzle with the yogurt "
+        "sauce. Say Grace and enjoy!!"
+        )
     )
 
 session.add(direction015)
@@ -723,12 +749,14 @@ session.commit()
 direction002 = Directions(
     recipe_id=roasted_tomato.id,
     step_number='2',
-    step='''Add the onion, tomatoes and garlic (leave the cloves whole!) to
-    a large rimmed baking sheet. Drizzle with the olive oil, then sprinkle
-    with the salt and pepper. Toss to coat and spread in an even layer. Bake
-    for about 30 minutes, stirring halfway through, until the tomatoes
-    have shriveled and started to char. Remove from the oven and let cool
-    for about 5 minutes.'''
+    step=(
+        "Add the onion, tomatoes and garlic (leave the cloves whole!) to "
+        "a large rimmed baking sheet. Drizzle with the olive oil, then sprinkle "
+        "with the salt and pepper. Toss to coat and spread in an even layer. Bake "
+        "for about 30 minutes, stirring halfway through, until the tomatoes "
+        "have shriveled and started to char. Remove from the oven and let cool "
+        "for about 5 minutes."
+        )
     )
 
 session.add(direction002)
@@ -737,9 +765,11 @@ session.commit()
 direction003 = Directions(
     recipe_id=roasted_tomato.id,
     step_number='3',
-    step='''Add the roasted veggie mixture to a blender, along with the broth,
-    tomato paste, oregano, coconut milk and salt. Process until smooth.
-    Transfer the mixture to a medium saucepan.'''
+    step=(
+        "Add the roasted veggie mixture to a blender, along with the broth, "
+        "tomato paste, oregano, coconut milk and salt. Process until smooth. "
+        "Transfer the mixture to a medium saucepan."
+        )
     )
 
 session.add(direction003)
@@ -748,10 +778,12 @@ session.commit()
 direction004 = Directions(
     recipe_id=roasted_tomato.id,
     step_number='4',
-    step='''Set the pan over medium low / low heat and cook for about
-    10 minutes, stirring occasionally, until warmed through and the flavors
-    have had a chance to meld. Taste and season with additional salt / pepper
-    as needed.'''
+    step=(
+        "Set the pan over medium low / low heat and cook for about "
+        "10 minutes, stirring occasionally, until warmed through and the flavors "
+        "have had a chance to meld. Taste and season with additional salt / pepper "
+        "as needed."
+        )
     )
 
 session.add(direction004)
@@ -760,8 +792,10 @@ session.commit()
 direction005 = Directions(
     recipe_id=roasted_tomato.id,
     step_number='5',
-    step='''Serve topped with plenty of fresh basil and bread on the
-    side for dipping!'''
+    step=(
+        "Serve topped with plenty of fresh basil and bread on the "
+        "side for dipping!"
+        )
     )
 
 session.add(direction005)
@@ -866,8 +900,10 @@ session.commit()
 direction002 = Directions(
     recipe_id=coconut_curry.id,
     step_number='2',
-    step='''Serve with minced cilantro, crushed roasted peanuts,
-    and shredded coconut.'''
+    step=(
+        "Serve with minced cilantro, crushed roasted peanuts, "
+        "and shredded coconut."
+        )
     )
 
 session.add(direction002)
@@ -904,9 +940,11 @@ session.commit()
 ingredient001 = Ingredients(
     recipe_id=pomelo_avocados.id,
     ingr_number='1',
-    ingredient='''pomelo - 1 large pomelo (1.5 cups) segmented and pulled apart
-    to small pieces (can exchange with 1 large grapefruit and 1 medium
-    orange)'''
+    ingredient=(
+        "pomelo - 1 large pomelo (1.5 cups) segmented and pulled apart "
+        "to small pieces (can exchange with 1 large grapefruit and 1 medium "
+        "orange)"
+        )
     )
 
 session.add(ingredient001)
@@ -933,8 +971,10 @@ session.commit()
 ingredient004 = Ingredients(
     recipe_id=pomelo_avocados.id,
     ingr_number='4',
-    ingredient='''crab meat - 450 grams (1 cup) gluten-free imitation crab or
-    steamed fresh crab picked over for shells)'''
+    ingredient=(
+        "crab meat - 450 grams (1 cup) gluten-free imitation crab or "
+        "steamed fresh crab picked over for shells)"
+        )
     )
 
 session.add(ingredient004)
@@ -943,8 +983,10 @@ session.commit()
 ingredient005 = Ingredients(
     recipe_id=pomelo_avocados.id,
     ingr_number='5',
-    ingredient='''coconut oil - 2 tablespoons melted or olive oil if you prefer
-    (I love that tropical flavor with the coconut oil)'''
+    ingredient=(
+        "coconut oil - 2 tablespoons melted or olive oil if you prefer "
+        "(I love that tropical flavor with the coconut oil)"
+        )
     )
 
 session.add(ingredient005)
@@ -953,8 +995,10 @@ session.commit()
 ingredient006 = Ingredients(
     recipe_id=pomelo_avocados.id,
     ingr_number='6',
-    ingredient='''lemon juice - juice of a lemon (extra lemon to prepare the
-    avocados) You can also use limes but I only had lemons on hand'''
+    ingredient=(
+        "lemon juice - juice of a lemon (extra lemon to prepare the "
+        "avocados) You can also use limes but I only had lemons on hand"
+        )
     )
 
 session.add(ingredient006)
@@ -963,9 +1007,11 @@ session.commit()
 ingredient007 = Ingredients(
     recipe_id=pomelo_avocados.id,
     ingr_number='7',
-    ingredient='''chili peppers - 1 finely chopped (to taste) I used a Thai
-    chili but you can use any kind you wish or none at all if you like it
-    mild'''
+    ingredient=(
+        "chili peppers - 1 finely chopped (to taste) I used a Thai "
+        "chili but you can use any kind you wish or none at all if you like it"
+        "mild"
+        )
     )
 
 session.add(ingredient007)
@@ -996,8 +1042,10 @@ session.commit()
 direction001 = Directions(
     recipe_id=pomelo_avocados.id,
     step_number='1',
-    step='''Segment your your pomelo (or grapefruit and oranges), pull apart
-    gently into small pieces and set aside.'''
+    step=(
+        "Segment your your pomelo (or grapefruit and oranges), pull apart "
+        "gently into small pieces and set aside."
+        )
     )
 
 session.add(direction001)
@@ -1006,8 +1054,10 @@ session.commit()
 direction002 = Directions(
     recipe_id=pomelo_avocados.id,
     step_number='2',
-    step='''In a small frying pan saute your shallots and garlic in a little
-    bit of olive oil or coconut oil just until aromatic. Set Aside to cool.'''
+    step=(
+        "In a small frying pan saute your shallots and garlic in a little "
+        "bit of olive oil or coconut oil just until aromatic. Set Aside to cool."
+        )
     )
 
 session.add(direction002)
@@ -1016,11 +1066,13 @@ session.commit()
 direction003 = Directions(
     recipe_id=pomelo_avocados.id,
     step_number='3',
-    step='''In a medium bowl, add your chopped gluten-free imitation crab-meat
-    or fresh steamed crab meat, picked over for shells. Add the cooled shallots
-    and garlic, pomelo, olive oil (melted coconut oil), lemon juice, chili
-    peppers and salt and pepper to taste. Toss gently to incorporate
-    ingredients. Set aside.'''
+    step=(
+        "In a medium bowl, add your chopped gluten-free imitation crab-meat "
+        "or fresh steamed crab meat, picked over for shells. Add the cooled shallots "
+        "and garlic, pomelo, olive oil (melted coconut oil), lemon juice, chili "
+        "peppers and salt and pepper to taste. Toss gently to incorporate "
+        "ingredients. Set aside."
+        )
     )
 
 session.add(direction003)
@@ -1029,11 +1081,13 @@ session.commit()
 direction004 = Directions(
     recipe_id=pomelo_avocados.id,
     step_number='4',
-    step='''Cut your avocados in half. Carefully remove the pit a small
-    teaspoon full of the the avocado meat to give more room for the Thai Pomelo
-    Crab Salad. That extra spoonful is a treat for the cook of course! Sprinkle
-    the juice of the lemon inside the avocado to prevent the oxidation process
-    from occurring. Season with salt and pepper as desired.'''
+    step=(
+        "Cut your avocados in half. Carefully remove the pit a small "
+        "teaspoon full of the the avocado meat to give more room for the Thai Pomelo "
+        "Crab Salad. That extra spoonful is a treat for the cook of course! Sprinkle "
+        "the juice of the lemon inside the avocado to prevent the oxidation process "
+        "from occurring. Season with salt and pepper as desired."
+        )
     )
 
 session.add(direction004)
@@ -1042,8 +1096,10 @@ session.commit()
 direction005 = Directions(
     recipe_id=pomelo_avocados.id,
     step_number='5',
-    step='''Place a few mounding tablespoons of Thai Pomelo Crab Salad in the
-    center of the avocado and mound up high. Enjoy!'''
+    step=(
+        "Place a few mounding tablespoons of Thai Pomelo Crab Salad in the "
+        "center of the avocado and mound up high. Enjoy!"
+        )
     )
 
 session.add(direction005)
@@ -1052,9 +1108,11 @@ session.commit()
 direction006 = Directions(
     recipe_id=pomelo_avocados.id,
     step_number='6',
-    step='''***You can make your Thai Pomelo Crab Salad up to 24 hours in
-    advance. Cut your avocados in half and sprinkle with lemon juice just
-    before you are ready to serve.'''
+    step=(
+        "***You can make your Thai Pomelo Crab Salad up to 24 hours in "
+        "advance. Cut your avocados in half and sprinkle with lemon juice just "
+        "before you are ready to serve."
+        )
     )
 
 session.add(direction006)
@@ -1186,9 +1244,11 @@ session.commit()
 direction002 = Directions(
     recipe_id=jalapeno_shrimp.id,
     step_number='2',
-    step='''Now lets make our marinade: In a blender blend cilantro, lime
-    juice, jalapeno peppers and olive oil. Reserve 2 tablespoons for mango
-    salad.'''
+    step=(
+        "Now lets make our marinade: In a blender blend cilantro, lime "
+        "juice, jalapeno peppers and olive oil. Reserve 2 tablespoons for mango "
+        "salad."
+        )
     )
 
 session.add(direction002)
@@ -1197,9 +1257,11 @@ session.commit()
 direction003 = Directions(
     recipe_id=jalapeno_shrimp.id,
     step_number='3',
-    step='''To make mango salad: In a medium size mixing bowl combine mango,
-    cucumber, jicama, red onion, 2 tablespoons of cilantro marinade and season
-    with salt to taste. Garnish with chopped cilantro. Mix and set aside. '''
+    step=(
+        "To make mango salad: In a medium size mixing bowl combine mango, "
+        "cucumber, jicama, red onion, 2 tablespoons of cilantro marinade and season "
+        "with salt to taste. Garnish with chopped cilantro. Mix and set aside."
+        )
     )
 
 session.add(direction003)
@@ -1208,10 +1270,12 @@ session.commit()
 direction004 = Directions(
     recipe_id=jalapeno_shrimp.id,
     step_number='4',
-    step='''Dry shrimps with a paper towel. Place shrimp in a bowl and add
-    cilantro marinade. Marinade for 20 minutes. Thread 3 shrimp into 10 inch
-    skewers. Grill on a charcoal or gas grill over medium heat, for about 4
-    minutes on each side, or until shrimp is cooked. '''
+    step=(
+        "Dry shrimps with a paper towel. Place shrimp in a bowl and add "
+        "cilantro marinade. Marinade for 20 minutes. Thread 3 shrimp into 10 inch "
+        "skewers. Grill on a charcoal or gas grill over medium heat, for about 4 "
+        "minutes on each side, or until shrimp is cooked."
+        )
     )
 
 session.add(direction004)
@@ -1361,9 +1425,11 @@ session.commit()
 direction001 = Directions(
     recipe_id=sesame_chicken.id,
     step_number='1',
-    step='''In a bowl mix ground chicken, tofu, green onions, miso paste,
-    ginger, tamari (soy sauce), white pepper, sesame oil and mix until well
-    incorporated.'''
+    step=(
+        "In a bowl mix ground chicken, tofu, green onions, miso paste, "
+        "ginger, tamari (soy sauce), white pepper, sesame oil and mix until well "
+        "incorporated."
+        )
     )
 
 session.add(direction001)
@@ -1372,10 +1438,12 @@ session.commit()
 direction002 = Directions(
     recipe_id=sesame_chicken.id,
     step_number='2',
-    step='''Roll chicken mixture into 1 and 1/2 inch balls and then roll into
-    toasted sesame seeds to cover chicken meatball completely. Set aside on a
-    parchment paper lined baking dish or well greased pan. (They have
-    a tendency to stick so don't skip this step)'''
+    step=(
+        "Roll chicken mixture into 1 and 1/2 inch balls and then roll into "
+        "toasted sesame seeds to cover chicken meatball completely. Set aside on a "
+        "parchment paper lined baking dish or well greased pan. (They have "
+        "a tendency to stick so don't skip this step)"
+        )
     )
 
 session.add(direction002)
@@ -1384,12 +1452,14 @@ session.commit()
 direction003 = Directions(
     recipe_id=sesame_chicken.id,
     step_number='3',
-    step='''You can either bake uncovered for approximately 20 minutes in a 190
-    degree C (375 degrees F) oven until golden brown and no longer pink inside.
-    Or you can pan fry for approximately 12 minutes on medium low heat and
-    turning occasionally so they brown on all sides. When the chicken meatballs
-    are done, they will be slightly firm to the touch and no longer pink
-    inside.'''
+    step=(
+        "You can either bake uncovered for approximately 20 minutes in a 190  "
+        "degree C (375 degrees F) oven until golden brown and no longer pink inside. "
+        "Or you can pan fry for approximately 12 minutes on medium low heat and "
+        "turning occasionally so they brown on all sides. When the chicken meatballs "
+        "are done, they will be slightly firm to the touch and no longer pink "
+        "inside."
+        )
     )
 
 session.add(direction003)
@@ -1398,9 +1468,11 @@ session.commit()
 direction004 = Directions(
     recipe_id=sesame_chicken.id,
     step_number='4',
-    step='''While your chicken meatballs are cooking, prepare the ponzu dipping
-    sauce. In a small bowl add tamari (soy sauce), lime juice and sesame oil
-    and mix.'''
+    step=(
+        "While your chicken meatballs are cooking, prepare the ponzu dipping "
+        "sauce. In a small bowl add tamari (soy sauce), lime juice and sesame oil "
+        "and mix."
+        )
     )
 
 session.add(direction004)
@@ -1409,8 +1481,10 @@ session.commit()
 direction005 = Directions(
     recipe_id=sesame_chicken.id,
     step_number='5',
-    step='''Enjoy Sesame Miso Chicken Meatballs with the ponzu sesame sauce!
-    Garnish with green onions if desired.'''
+    step=(
+        "Enjoy Sesame Miso Chicken Meatballs with the ponzu sesame sauce! "
+        "Garnish with green onions if desired."
+        )
     )
 
 session.add(direction005)
@@ -1492,8 +1566,10 @@ session.commit()
 ingredient006 = Ingredients(
     recipe_id=parmesan_sticks.id,
     ingr_number='6',
-    ingredient='''Warm marinara sauce and/or reduced-fat ranch salad dressing
-    (optional)'''
+    ingredient=(
+        "Warm marinara sauce and/or reduced-fat ranch salad dressing "
+        "(optional)"
+        )
     )
 
 session.add(ingredient006)
@@ -1506,8 +1582,10 @@ session.commit()
 direction001 = Directions(
     recipe_id=parmesan_sticks.id,
     step_number='1',
-    step='''Preheat oven to 400°F. Spray baking sheet with nonstick
-    cooking spray.'''
+    step=(
+        "Preheat oven to 400°F. Spray baking sheet with nonstick "
+        "cooking spray."
+        )
     )
 
 session.add(direction001)
@@ -1516,8 +1594,10 @@ session.commit()
 direction002 = Directions(
     recipe_id=parmesan_sticks.id,
     step_number='2',
-    step='''Roll out dough on lightly floured surface to 12-inch square.
-    Place prepared baking sheet. Bake 10 minutes.'''
+    step=(
+        "Roll out dough on lightly floured surface to 12-inch square. "
+        "Place prepared baking sheet. Bake 10 minutes."
+        )
     )
 
 session.add(direction002)
@@ -1526,9 +1606,11 @@ session.commit()
 direction003 = Directions(
     recipe_id=parmesan_sticks.id,
     step_number='3',
-    step='''Spread garlic-and-herb spreadable cheese evenly over crust. Layer
-    evenly with Italian cheese blend, Parmesan cheese, and oregano. Bake 15
-    minutes or until golden brown.'''
+    step=(
+        "Spread garlic-and-herb spreadable cheese evenly over crust. Layer "
+        "evenly with Italian cheese blend, Parmesan cheese, and oregano. Bake 15 "
+        "minutes or until golden brown."
+        )
     )
 
 session.add(direction003)
@@ -1537,8 +1619,10 @@ session.commit()
 direction004 = Directions(
     recipe_id=parmesan_sticks.id,
     step_number='4',
-    step='''Slice lengthwise into 8 rows; slice opposite direction into 3 rows.
-    Serve with marinara sauce or ranch for dipping, if desired.'''
+    step=(
+        "Slice lengthwise into 8 rows; slice opposite direction into 3 rows. "
+        "Serve with marinara sauce or ranch for dipping, if desired."
+        )
     )
 
 session.add(direction004)
@@ -1643,9 +1727,11 @@ session.commit()
 direction001 = Directions(
     recipe_id=party_pitas.id,
     step_number='1',
-    step='''Combine the cream, mayonnaise, dill and garlic salt. Cut each pita
-    in half horizontally; spread 2 tablespoons mixture onto each cut
-    surface.'''
+    step=(
+        "Combine the cream, mayonnaise, dill and garlic salt. Cut each pita "
+        "in half horizontally; spread 2 tablespoons mixture onto each cut "
+        "surface."
+        )
     )
 
 session.add(direction001)
@@ -1654,9 +1740,11 @@ session.commit()
 direction002 = Directions(
     recipe_id=party_pitas.id,
     step_number='2',
-    step='''On four pita halves, layer spinach, ham and cheese. Top with
-    remaining pita halves. Cut each sandwich into four wedges; secure with
-    toothpicks. Yield: 16 pieces.'''
+    step=(
+        "On four pita halves, layer spinach, ham and cheese. Top with "
+        "remaining pita halves. Cut each sandwich into four wedges; secure with "
+        "toothpicks. Yield: 16 pieces."
+        )
     )
 
 session.add(direction002)
@@ -1739,8 +1827,10 @@ session.commit()
 ingredient007 = Ingredients(
     recipe_id=tuna_cups.id,
     ingr_number='7',
-    ingredient='''2 cans (5 ounces each) solid white albacore tuna in water,
-    drained and flaked'''
+    ingredient=(
+        "2 cans (5 ounces each) solid white albacore tuna in water, "
+        "drained and flaked"
+        )
     )
 
 session.add(ingredient007)
@@ -1753,9 +1843,11 @@ session.commit()
 direction001 = Directions(
     recipe_id=tuna_cups.id,
     step_number='1',
-    step='''Cut ends off of each cucumber; cut each cucumber into 10 slices.
-    Scoop out cucumber slices with a rounded 1/2 teaspoon, leaving thick
-    shell.'''
+    step=(
+        "Cut ends off of each cucumber; cut each cucumber into 10 slices. "
+        "Scoop out cucumber slices with a rounded 1/2 teaspoon, leaving thick "
+        "shell."
+        )
     )
 
 session.add(direction001)
@@ -1764,8 +1856,10 @@ session.commit()
 direction002 = Directions(
     recipe_id=tuna_cups.id,
     step_number='2',
-    step='''Stir yogurt, olives, onion, lemon juice, and garlic in large bowl
-    until smooth and well blended. Stir in tuna.'''
+    step=(
+        "Stir yogurt, olives, onion, lemon juice, and garlic in large bowl "
+        "until smooth and well blended. Stir in tuna."
+        )
     )
 
 session.add(direction002)
@@ -1774,8 +1868,10 @@ session.commit()
 direction003 = Directions(
     recipe_id=tuna_cups.id,
     step_number='3',
-    step='''Spoon about 1 tablespoon tuna salad into each cucumber cup. Serve
-    immediately.'''
+    step=(
+        "Spoon about 1 tablespoon tuna salad into each cucumber cup. Serve "
+        "immediately."
+        )
     )
 
 session.add(direction003)
