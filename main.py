@@ -50,6 +50,9 @@ def showLogin():
     return render_template('login.html', STATE=state)
 
 
+# --------------------------------------------------------------------------- #
+#                              Connect to Google                              #
+# --------------------------------------------------------------------------- #
 @app.route('/healthy-recipes/gconnect', methods=['POST'])
 def gconnect():
     # Validate state token
@@ -135,11 +138,10 @@ def gconnect():
     print "done!"
     return output
 
+
 # --------------------------------------------------------------------------- #
 #                            Disconnect from Google                           #
 # --------------------------------------------------------------------------- #
-
-
 @app.route('/healthy-recipes/gdisconnect')
 def gdisconnect():
     access_token = login_session.get('access_token')
@@ -154,7 +156,10 @@ def gdisconnect():
     print 'In gdisconnect access token is %s', access_token
     print 'User name is: '
     print login_session['username']
-    url = 'https://accounts.google.com/o/oauth2/revoke?token=%s' % login_session['access_token']
+    url = (
+        'https://accounts.google.com/o/oauth2/revoke?token=%s'
+        % login_session['access_token']
+        )
     h = httplib2.Http()
     result = h.request(url, 'GET')[0]
     print 'result is '
@@ -193,7 +198,8 @@ def coursesJSON():
 # --------------------------------------------------------------------------- #
 #                                 Recipe JSON                                 #
 # --------------------------------------------------------------------------- #
-@app.route('/healthy-recipes/course/<int:course_id>/recipes/<int:recipe_id>/JSON')
+@app.route(
+    '/healthy-recipes/course/<int:course_id>/recipes/<int:recipe_id>/JSON')
 def recipeJSON(course_id, recipe_id):
 
     viewRecipe = session.query(Recipe).filter_by(id=recipe_id).one()
