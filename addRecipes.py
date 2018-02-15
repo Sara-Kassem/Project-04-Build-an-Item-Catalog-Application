@@ -97,7 +97,7 @@ print ("All Courses were added successfully!")
 lentil_soup = Recipe(
     id='1',
     name='Crushed Lentil Soup with Lamb Meatballs',
-    image="",
+    image="crushed-lentil-soup-with-lamb-meatballs.jpg",
     course_id=soup.id,
     )
 
@@ -579,7 +579,7 @@ print ("Added Crushed Lentil Soup with Lamb Meatballs!")
 roasted_tomato = Recipe(
     id='2',
     name='Roasted Cherry Tomato Soup',
-    image="",
+    image="roasted-cherry-tomato-soup.jpg",
     course_id=soup.id,
     )
 
@@ -776,7 +776,7 @@ print ("Added Roasted Cherry Tomato Soup!")
 coconut_curry = Recipe(
     id='3',
     name='7 Ingredient Coconut Curry Seafood Soup',
-    image="",
+    image="7-ingredient-coconut-curry-seafood-soup.jpg",
     course_id=soup.id
     )
 
@@ -890,7 +890,7 @@ print ("Added 7 Ingredient Coconut Curry Seafood Soup!")
 pomelo_avocados = Recipe(
     id='4',
     name='Thai Pomelo Crab Salad Avocados',
-    image="",
+    image="thai-pomelo-crab-salad-avocados.jpg",
     course_id=side_dish.id
     )
 
@@ -1069,7 +1069,7 @@ print ("Added Thai Pomelo Crab Salad Avocados!")
 jalapeno_shrimp = Recipe(
     id='5',
     name='Cilantro-Jalapeno Grilled Shrimp',
-    image="",
+    image="cilantro-jalapeno-grilled-shrimp.jpg",
     course_id=side_dish.id
     )
 
@@ -1235,7 +1235,7 @@ print ("Added Cilantro-Jalapeno Grilled Shrimp!")
 sesame_chicken = Recipe(
     id='6',
     name='Sesame Miso Chicken Meatballs',
-    image="",
+    image="sesame-miso-chicken-meatballs.jpg",
     course_id=side_dish.id
     )
 
@@ -1433,7 +1433,7 @@ print ("Added Sesame Miso Chicken Meatballs!")
 parmesan_sticks = Recipe(
     id='7',
     name='Garlic-Herb Parmesan Dipping Sticks',
-    image="",
+    image="garlic-herb-parmesan-dipping-sticks.jpg",
     course_id=appetizer.id
     )
 
@@ -1553,7 +1553,7 @@ print ("Added Garlic-Herb Parmesan Dipping Sticks!")
 party_pitas = Recipe(
     id='8',
     name='Party Pitas Recipe',
-    image="",
+    image="party-pitas-recipe.jpg",
     course_id=appetizer.id
     )
 
@@ -1671,7 +1671,7 @@ print ("Added Party Pitas Recipe!")
 tuna_cups = Recipe(
     id='9',
     name='Mediterranean Tuna Cups',
-    image="",
+    image="mediterranean-tuna-cups.jpg",
     course_id=appetizer.id
     )
 
