@@ -38,6 +38,7 @@ session = DBSession()
 
 latestRecipesLimit = 3
 
+
 # --------------------------------------------------------------------------- #
 #                                 Login Page                                  #
 # --------------------------------------------------------------------------- #
@@ -56,7 +57,7 @@ def gconnect():
         response = make_response(json.dumps('Invalid state parameter.'), 401)
         response.headers['Content-Type'] = 'application/json'
         return response
-    
+
     # Obtain authorization code
     code = request.data
 
@@ -102,8 +103,8 @@ def gconnect():
     stored_access_token = login_session.get('access_token')
     stored_gplus_id = login_session.get('gplus_id')
     if stored_access_token is not None and gplus_id == stored_gplus_id:
-        response = make_response(json.dumps('Current user is already connected.'),
-                                 200)
+        response = make_response(
+            json.dumps('Current user is already connected.'), 200)
         response.headers['Content-Type'] = 'application/json'
         return response
 
@@ -128,8 +129,9 @@ def gconnect():
     output += '!</h1>'
     output += '<img src="'
     output += login_session['picture']
-    output += ' " style = "width: 300px; height: 300px;border-radius: 150px;-webkit-border-radius: 150px;-moz-border-radius: 150px;"> '
-    flash("you are now logged in as %s" % login_session['username'])
+    output += ' " style = "width: 300px; height: 300px;'
+    output += 'border-radius: 150px;-webkit-border-radius: 150px;'
+    output += '-moz-border-radius: 150px;"> '
     print "done!"
     return output
 
@@ -143,7 +145,8 @@ def gdisconnect():
     access_token = login_session.get('access_token')
     if access_token is None:
         print 'Access Token is None'
-        response = make_response(json.dumps('Current user not connected.'), 401)
+        response = make_response(
+            json.dumps('Current user not connected.'), 401)
         response.headers['Content-Type'] = 'application/json'
         print response
         flash("Current user not connected.")
@@ -164,13 +167,17 @@ def gdisconnect():
         del login_session['picture']
         response = make_response(json.dumps('Successfully disconnected.'), 200)
         response.headers['Content-Type'] = 'application/json'
-        flash("Logged out!")
         print response
-        return redirect(url_for(request.args.get('next'), course_id=request.args.get('course_id'), recipe_id=request.args.get('recipe_id')))
+        return redirect(url_for(request.args.get('next'),
+                                course_id=request.args.get('course_id'),
+                                recipe_id=request.args.get('recipe_id')))
     else:
-        response = make_response(json.dumps('Failed to revoke token for given user.', 400))
+        response = make_response(
+            json.dumps('Failed to revoke token for given user.', 400))
         response.headers['Content-Type'] = 'application/json'
         return response
+
+
 # --------------------------------------------------------------------------- #
 #                                 Home Page                                   #
 # --------------------------------------------------------------------------- #
@@ -188,7 +195,8 @@ def homePage():
     # Load index.html
     return render_template('index.html',
                            all_courses=all_courses,
-                           latestRecipes=latestRecipes
+                           latestRecipes=latestRecipes,
+                           login_session=login_session
                            )
 
 
@@ -213,7 +221,9 @@ def courseRecipes(course_id):
     return render_template('courseRecipes.html',
                            all_courses=all_courses,
                            courseRecipes=courseRecipes,
-                           course=course)
+                           course=course,
+                           login_session=login_session
+                           )
 
 
 # --------------------------------------------------------------------------- #
@@ -244,15 +254,17 @@ def viewRecipe(course_id, recipe_id):
                            viewRecipe=viewRecipe,
                            recipeCourse=recipeCourse,
                            ingredients=ingredients,
-                           directions=directions
+                           directions=directions,
+                           login_session=login_session
                            )
 
 
 # --------------------------------------------------------------------------- #
 #                             Delete a Recipe                                 #
 # --------------------------------------------------------------------------- #
-@app.route('/healthy-recipes/course/<int:course_id>/recipes/<int:recipe_id>/delete',
-           methods=['GET', 'POST'])
+@app.route(
+    '/healthy-recipes/course/<int:course_id>/recipes/<int:recipe_id>/delete',
+    methods=['GET', 'POST'])
 def deleteRecipe(course_id, recipe_id):
 
     # Get all courses in the database
@@ -267,9 +279,9 @@ def deleteRecipe(course_id, recipe_id):
     # Check if the user is logged in, if not then redirect to the login page
     if 'username' not in login_session:
         return redirect(url_for('showLogin',
-        next=request.endpoint,
-        course_id=course_id,
-        recipe_id=recipe_id))
+                                next=request.endpoint,
+                                course_id=course_id,
+                                recipe_id=recipe_id))
 
     # if the request method is POST, perform actions to the database
     if request.method == 'POST':
@@ -288,15 +300,17 @@ def deleteRecipe(course_id, recipe_id):
         return render_template('deleteRecipe.html',
                                all_courses=all_courses,
                                recipeCourse=recipeCourse,
-                               deleteRecipe=deleteRecipe
+                               deleteRecipe=deleteRecipe,
+                               login_session=login_session
                                )
 
 
 # --------------------------------------------------------------------------- #
 #                               Edit a Recipe                                 #
 # --------------------------------------------------------------------------- #
-@app.route('/healthy-recipes/course/<int:course_id>/recipes/<int:recipe_id>/edit',
-           methods=['GET', 'POST'])
+@app.route(
+    '/healthy-recipes/course/<int:course_id>/recipes/<int:recipe_id>/edit',
+    methods=['GET', 'POST'])
 def editRecipe(course_id, recipe_id):
 
     # Get all courses in the database
@@ -315,14 +329,14 @@ def editRecipe(course_id, recipe_id):
     # Get all the directions of the recipe
     directions = session.query(Directions).filter_by(
         recipe_id=recipe_id).all()
-    
+
     # Check if the user is logged in, if not then redirect to the login page
     if 'username' not in login_session:
         return redirect(url_for('showLogin',
-        next=request.endpoint,
-        course_id=course_id,
-        recipe_id=recipe_id))
-    
+                                next=request.endpoint,
+                                course_id=course_id,
+                                recipe_id=recipe_id))
+
     # if the request method is POST, perform actions to the database
     if request.method == 'POST':
 
@@ -389,7 +403,7 @@ def editRecipe(course_id, recipe_id):
                 # add the new step to the database
                 session.add(newDirection)
                 session.commit()
-        
+
         flash("Recipe was edited successfully!")
 
         # after updating all the changes, redirect to the selected recipe page
@@ -404,14 +418,16 @@ def editRecipe(course_id, recipe_id):
                                recipeCourse=recipeCourse,
                                editRecipe=editRecipe,
                                ingredients=ingredients,
-                               directions=directions
+                               directions=directions,
+                               login_session=login_session
                                )
 
 
 # --------------------------------------------------------------------------- #
 #                             Add a New Recipe                                #
 # --------------------------------------------------------------------------- #
-@app.route('/healthy-recipes/course/<int:course_id>/recipes/new', methods=['GET', 'POST'])
+@app.route('/healthy-recipes/course/<int:course_id>/recipes/new',
+           methods=['GET', 'POST'])
 def newRecipe(course_id):
 
     # Get all courses in the database
@@ -422,10 +438,10 @@ def newRecipe(course_id):
 
     # Check if the user is logged in, if not then redirect to the login page
     if 'username' not in login_session:
-        
+
         return redirect(url_for('showLogin',
-        next=request.endpoint,
-        course_id=course_id))
+                                next=request.endpoint,
+                                course_id=course_id))
 
     # if the request method is POST, perform actions to the database
     if request.method == 'POST':
@@ -495,7 +511,9 @@ def newRecipe(course_id):
     else:
         return render_template('newRecipe.html',
                                all_courses=all_courses,
-                               recipeCourse=recipeCourse)
+                               recipeCourse=recipeCourse,
+                               login_session=login_session
+                               )
 
 if __name__ == '__main__':
     app.secret_key = 'super_secret_key'
