@@ -15,6 +15,14 @@ class Course(Base):
     id = Column(Integer, primary_key=True)
     name = Column(String, nullable=False)
 
+    @property
+    def serialize(self):
+        """Return object data in easily serializeable format"""
+        return {
+            'name': self.name,
+            'id': self.id,
+        }
+
 
 # create a table for recipes
 class Recipe(Base):
@@ -24,6 +32,15 @@ class Recipe(Base):
     name = Column(String, nullable=False)
     image = Column(String)
     course_id = Column(Integer, ForeignKey('course.id'))
+
+    @property
+    def serialize(self):
+        """Return object data in easily serializeable format"""
+        return {
+            'name': self.name,
+            'id': self.id,
+            'image': self.image
+        }
 
 
 # create a table for ingredients
@@ -35,6 +52,14 @@ class Ingredients(Base):
     ingr_index = Column(Integer, primary_key=True)
     ingredient = Column(String, nullable=False)
 
+    @property
+    def serialize(self):
+        """Return object data in easily serializeable format"""
+        return {
+            'ingr_number': self.ingr_number,
+            'ingredient': self.ingredient
+        }
+
 
 # create a table for directions
 class Directions(Base):
@@ -44,6 +69,14 @@ class Directions(Base):
     step_number = Column(Integer)
     step_index = Column(Integer, primary_key=True)
     step = Column(String, nullable=False)
+
+    @property
+    def serialize(self):
+        """Return object data in easily serializeable format"""
+        return {
+            'step_number': self.step_number,
+            'step': self.step,
+        }
 
 
 engine = create_engine('sqlite:///healthyRecipes.db')

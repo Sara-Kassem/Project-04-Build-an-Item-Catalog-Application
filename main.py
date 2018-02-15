@@ -179,6 +179,38 @@ def gdisconnect():
 
 
 # --------------------------------------------------------------------------- #
+#                              All courses JSON                               #
+# --------------------------------------------------------------------------- #
+@app.route('/healthy-recipes/courses/JSON')
+def coursesJSON():
+
+    # Get the course with id from the database
+    courses = session.query(Course).all()
+
+    return jsonify(courses=[i.serialize for i in courses])
+
+
+# --------------------------------------------------------------------------- #
+#                                 Recipe JSON                                 #
+# --------------------------------------------------------------------------- #
+@app.route('/healthy-recipes/course/<int:course_id>/recipes/<int:recipe_id>/JSON')
+def recipeJSON(course_id, recipe_id):
+
+    viewRecipe = session.query(Recipe).filter_by(id=recipe_id).one()
+
+    # Get all the ingredients of the recipe
+    ingredients = session.query(Ingredients).filter_by(
+        recipe_id=recipe_id).all()
+
+    # Get all the directions of the recipe
+    directions = session.query(Directions).filter_by(recipe_id=recipe_id).all()
+
+    return jsonify(Recipe=viewRecipe.serialize,
+                   ingredients=[i.serialize for i in ingredients],
+                   directions=[i.serialize for i in directions])
+
+
+# --------------------------------------------------------------------------- #
 #                                 Home Page                                   #
 # --------------------------------------------------------------------------- #
 @app.route('/')
