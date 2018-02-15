@@ -15,7 +15,7 @@
             <!-- Start Header -->
             <header>
 
-                <a href="{{url_for('homePage')}}"><img src="../images/healthy-recipes-logo.png" alt="Healty Recipes Logo"></a>
+                <a href="{{url_for('homePage')}}"><img src="{{url_for('static', filename='healthy-recipes-logo.png')}}" alt="Healty Recipes Logo"></a>
 
                 <nav>
                     <ul>
@@ -26,11 +26,26 @@
                     </ul>
                 </nav>
 
+                <a href="{{url_for('showLogin', next=request.endpoint, course_id=course.id)}}">Login</a>
+                <a href="{{url_for('gdisconnect', next=request.endpoint, course_id=course.id)}}">Logout</a>
+
             </header>
             <!-- End Header -->
 
             <!-- Start Main -->
             <main>
+
+                <!--MESSAGE FLASHING EXAMPLE -->
+                {% with messages = get_flashed_messages() %}
+                {% if messages %}
+
+                <ul>
+                {% for message in messages %}
+                    <li><strong>{{message}}</strong></li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+                {% endwith %}
 
                 <!-- Display the course name -->
                 <h1>{{course.name}}</h1>
@@ -39,7 +54,7 @@
                 {% for i in courseRecipes %}
                 
                 <section>
-                    <a href="{{url_for('viewRecipe',course_id=i.course_id, recipe_id=i.id)}}"><img src="{{i.image}}" alt="{{i.name}}"></a>
+                    <a href="{{url_for('viewRecipe',course_id=i.course_id, recipe_id=i.id)}}"><img src="{{url_for('static', filename=i.image)}}" alt="{{i.name}}"></a>
                     <p>{{i.name}}</p>
                 </section>
                 
