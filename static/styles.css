@@ -419,7 +419,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
     margin-top: 20px;
 }
 
@@ -433,13 +432,12 @@ header {
 }
 
 #imagePreview {
-    width: 30%;
-    height: fit-content
+    width: 40%;
 }
 
 #imagePreview img {
     max-height: 20vh;
-    max-width: 20vh;
+    max-width: 100%;
 }
 
 @media (min-width:508px) {

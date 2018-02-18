@@ -51,16 +51,6 @@
 
                     <input type="text" id="newRecipeName" name="newRecipeName" placeholder="New Recipe Name" required>
 
-                    <label for="newRecipeCourse">Course:</label>
-
-                    <select id="newRecipeCourse" name="newRecipeCourse" required>
-                        <!-- iterate through all courses -->
-                        {% for i in all_courses %}
-                        <option value="{{i.name}}">{{i.name}}</option> 
-                        {% endfor %}
-    
-                    </select>
-
                     <div id="chooseRecipeImage">
                         <label id="uploadImageLabel" for="uploadImage">Upload Image</label>
 

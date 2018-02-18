@@ -9,20 +9,6 @@ function closeSideBar() {
     document.getElementById("sideNav").style.display = "none";
     }
 
-
-// ------------------------------------------------------ //
-// Check if the user is logged in to display profile data //
-// ------------------------------------------------------ //
-logCheck = "{{login_session['username']}}";
-
-if (logCheck) {
-    $('#signIn').attr('style', 'visibility: hidden');
-} else {
-    $('#signOut').attr('style', 'visibility: hidden');
-    $('#userName').attr('style', 'display: none');
-    $('#userPic').attr('style', 'display: none');
-}
-
 // --------------------------------------------- //
 // Hide flach message after a set amount of time //
 // --------------------------------------------- //
@@ -43,7 +29,11 @@ var imageInput = document.getElementById("uploadImage");
 
 var imagePreview = document.getElementById("imagePreview");
 
-var filePath = imageInput.value;
+imageInput.addEventListener('change', updateImageDisplay);
+
+if (imageInput) {
+    var filePath = imageInput.value;
+}
 
 // allowed file types
 var fileTypes = /(\.jpg|\.jpeg|\.png|\.gif)$/i;
@@ -80,7 +70,5 @@ function updateImageDisplay() {
         reader.readAsDataURL(imageInput.files[0]);
     }
 }
-
-imageInput.addEventListener('change', updateImageDisplay);
 
 // --------------------------------------------------- //
