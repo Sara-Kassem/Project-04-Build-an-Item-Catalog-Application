@@ -300,6 +300,13 @@ def deleteRecipe(course_id, recipe_id):
     # Get the recipe with the specified ID
     deleteRecipe = session.query(Recipe).filter_by(id=recipe_id).one()
 
+    # Get all the ingredients of the recipe
+    ingredients = session.query(Ingredients).filter_by(
+        recipe_id=recipe_id).all()
+
+    # Get all the directions of the recipe
+    directions = session.query(Directions).filter_by(recipe_id=recipe_id).all()
+
     # Check if the user is logged in, if not then redirect to the login page
     if 'username' not in login_session:
         return redirect(url_for('showLogin',
@@ -310,9 +317,20 @@ def deleteRecipe(course_id, recipe_id):
     # if the request method is POST, perform actions to the database
     if request.method == 'POST':
 
+        # delete the ingredients of the selected recipe
+        for i in ingredients:
+            session.delete(i)
+            session.commit()
+
+        # delete the steps of the selected recipe
+        for i in directions:
+            session.delete(i)
+            session.commit()
+
         # delete the selected recipe from database
         session.delete(deleteRecipe)
         session.commit()
+
         flash("Recipe was deleted successfully!")
 
         # redirect to all recipes in the course after deleting
