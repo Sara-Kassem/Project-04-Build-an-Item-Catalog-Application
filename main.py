@@ -36,7 +36,7 @@ session = DBSession()
 #      Set the number of recipes to be shown in the latest recipes secion     #
 # --------------------------------------------------------------------------- #
 
-latestRecipesLimit = 3
+latestRecipesLimit = 9
 
 
 # --------------------------------------------------------------------------- #
@@ -77,8 +77,7 @@ def gconnect():
 
     # Check that the access token is valid.
     access_token = credentials.access_token
-    url = ('https://www.googleapis.com/oauth2/v1/tokeninfo?access_token=%s'
-           % access_token)
+    url = 'https://www.googleapis.com/oauth2/v1/tokeninfo?access_token=%s' % access_token
     h = httplib2.Http()
     result = json.loads(h.request(url, 'GET')[1])
     # If there was an error in the access token info, abort.
@@ -125,18 +124,8 @@ def gconnect():
     login_session['username'] = data['name']
     login_session['picture'] = data['picture']
     login_session['email'] = data['email']
-
-    output = ''
-    output += '<h1>Welcome, '
-    output += login_session['username']
-    output += '!</h1>'
-    output += '<img src="'
-    output += login_session['picture']
-    output += ' " style = "width: 300px; height: 300px;'
-    output += 'border-radius: 150px;-webkit-border-radius: 150px;'
-    output += '-moz-border-radius: 150px;"> '
     print "done!"
-    return output
+    return "True"
 
 
 # --------------------------------------------------------------------------- #
@@ -156,10 +145,7 @@ def gdisconnect():
     print 'In gdisconnect access token is %s', access_token
     print 'User name is: '
     print login_session['username']
-    url = (
-        'https://accounts.google.com/o/oauth2/revoke?token=%s'
-        % login_session['access_token']
-        )
+    url = 'https://accounts.google.com/o/oauth2/revoke?token=%s' % access_token
     h = httplib2.Http()
     result = h.request(url, 'GET')[0]
     print 'result is '
