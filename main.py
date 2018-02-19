@@ -32,12 +32,12 @@ Base.metadata.bind = engine
 DBSession = sessionmaker(bind=engine)
 session = DBSession()
 
+
 # --------------------------------------------------------------------------- #
 #      Set the number of recipes to be shown in the latest recipes secion     #
 # --------------------------------------------------------------------------- #
 
 latestRecipesLimit = 9
-
 
 # --------------------------------------------------------------------------- #
 #                                 Login Page                                  #
