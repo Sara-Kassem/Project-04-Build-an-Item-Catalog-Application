@@ -39,6 +39,7 @@ session = DBSession()
 
 latestRecipesLimit = 9
 
+
 # --------------------------------------------------------------------------- #
 #                                 Login Page                                  #
 # --------------------------------------------------------------------------- #
@@ -79,7 +80,7 @@ def gconnect():
     access_token = credentials.access_token
     url = (
         'https://www.googleapis.com/oauth2/v1/tokeninfo?access_token=%s'
-         % access_token)
+        % access_token)
     h = httplib2.Http()
     result = json.loads(h.request(url, 'GET')[1])
     # If there was an error in the access token info, abort.
