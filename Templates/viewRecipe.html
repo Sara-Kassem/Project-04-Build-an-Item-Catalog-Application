@@ -31,8 +31,8 @@
                 </ul>
                 
                 <div id="logStatus">
-                    <a id="signIn" href="{{url_for('showLogin', next=request.endpoint)}}">Login</a>
-                    <a id="signOut" href="{{url_for('gdisconnect', next=request.endpoint)}}">Logout</a>
+                    <a id="signIn" href="{{url_for('showLogin', next=request.endpoint, course_id=recipeCourse.id, recipe_id=viewRecipe.id)}}">Login</a>
+                    <a id="signOut" href="{{url_for('gdisconnect', next=request.endpoint, course_id=recipeCourse.id, recipe_id=viewRecipe.id)}}">Logout</a>
                 </div>
             </nav>
 
