@@ -740,7 +740,7 @@ session.commit()
 direction001 = Directions(
     recipe_id=roasted_tomato.id,
     step_number='1',
-    step='Preheat the oven to 400ºF.'
+    step='Preheat the oven to 400F.'
     )
 
 session.add(direction001)
@@ -1583,7 +1583,7 @@ direction001 = Directions(
     recipe_id=parmesan_sticks.id,
     step_number='1',
     step=(
-        "Preheat oven to 400°F. Spray baking sheet with nonstick "
+        "Preheat oven to 400F. Spray baking sheet with nonstick "
         "cooking spray."
         )
     )
